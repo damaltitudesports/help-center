@@ -1,3 +1,21 @@
+<style>
+        div#table-container{
+            
+        }
+        table#shipping-holidays{
+            line-height: 1.2em;
+            margin-bottom:0;
+        }
+        table#shipping-holidays td{
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        table#shipping-holidays td, table#shipping-holidays th{
+            padding:0.3rem 0.3rem;
+        }
+        table#shipping-holidays tr.last-row td{
+            border: none;
+        }
+    </style>
 <div class="col-12 col-md-3" id="faq-sidebar">
   <h2 class="pt-1">Centre d’assistance</h2>
   <ul class="left-menu help-center list-unstyled d-none d-md-block">
@@ -27,13 +45,59 @@
       <div class="faq-search">
           <input type="text" placeholder="Rechercher dans Livraison" />
       </div>
-      <div style="background-image: url(https://cdn.shopify.com/s/files/1/1230/9376/files/ss-banner-bg-dots.png);padding: 0 1em 1.5em;">
+      <div style="background-image: url(https://cdn.shopify.com/s/files/1/1230/9376/files/ss-banner-bg-dots.png);padding: 0 1em 1em;margin: 1.5em 0 2em;">
         <p style="font-weight: 500;font-size: 1.5em;margin-top: 0.5em;">Recevez votre commande à temps pour Noël.</p>
-        <!--<p><strong>Xpresspost est GRATUIT sur les commandes de plus de 99$.</strong> Pour un temps limité, au Canada. </p>-->
-        <p>Nous suivons avec attention les retards de livraison de Postes Canada dus aux grèves tournantes ayant pris fin le 27 novembre.</p>
-        <p>Des mises à jour quotidiennes seront publiées sur cette page.</p>
-        <i>Dernière mise à jour : 7 décembre 2018</i>
+        <p>Consultez ci-dessous les dates limites de commande en fonction de la destination et de la méthode d’envoi. </p>
+        <p><strong>Xpresspost est GRATUIT sur les commandes de plus de 99$.</strong> Pour un temps limité, au Canada seulement. </p>
+        <p style="border: 1px solid rgba(0,0,0,0.1); padding: 1em; margin-right: 0.5em; background-color: #fff;line-height: 1.7em;">Nous suivons avec attention les retards de livraison de Postes Canada dus aux grèves tournantes ayant pris fin le 27 novembre. Les dates suivantes sont les <strong>dernières journées</strong> pour commander afin de recevoir votre colis à temps pour Noël. Les dates diffèrent selon de la destination de votre envoi et de la méthode de livraison choisie. Les <strong>dates limites</strong> de commandes ci-dessous prennent en compte nos délais de traitement, les délais de livraison standard de Postes Canada, ainsi que les retards maximum prévus et fournis par Postes Canada. Des mises à jour quotidiennes seront publiées sur cette page.</p>
+        <p style="font-weight: 500;font-size: 1.3em;margin-top: 0.5em;">Dates limites de commande selon la région d’envoi de votre colis et la méthode de livraison</p>
+        <p><i style="opacity: 0.55;white-space: nowrap;">(Dernière mise à jour : 7 décembre 2018)</i></p>
+        <div id="table-container">
+            <table id="shipping-holidays">
+                <thead style="vertical-align: bottom;">
+                    <tr><th>Région</th><th>Xpresspost</th><th>Expedited Parcel</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="3" style="border: none;padding: 1em 0 0.5em;"><strong>Grand Montréal, Toronto et Ottawa</strong></td></tr>
+                    <tr><td>Grand Ottawa, Kingston, Belleville</td><td>17-Dec-18</td><td>13-Dec-18</td></tr>
+                    <tr><td>Grand Toronto (tous les codes postaux commençant par M)</td><td>13-Dec-18</td><td>11-Dec-18</td></tr>
+                    <tr><td>Guelph, Cambridge, London, Windsor, Owen Sound</td><td>17-Dec-18</td><td>13-Dec-18</td></tr>
+                    <tr><td>Longueuil, Gatineau</td><td>17-Dec-18</td><td>17-Dec-18</td></tr>
+                    <tr><td>Montréal, Laval (tous les codes postaux commençant par H)</td><td>17-Dec-18</td><td>17-Dec-18</td></tr>
+                    <tr class="last-row"><td>Le sud de l'Ontario (tous les codes postaux commençant par L)</td><td>17-Dec-18</td><td>12-Dec-18</td></tr>
+                    <tr><td colspan="3" style="border: none;padding: 1em 0 0.5em;"><strong>Canada métropolitaine</strong></td></tr>
+                    <tr><td>L'est de l'Ontario (tous les codes postaux commençant par K)</td><td>14-Dec-18</td><td>12-Dec-18</td></tr>
+                    <tr><td>Grand Calgary / Grand Edmonton</td><td>14-Dec-18</td><td>10-Dec-18</td></tr>
+                    <tr><td>Grand Charlottetown</td><td>14-Dec-18</td><td>10-Dec-18</td></tr>
+                    <tr><td>Grand Halifax</td><td>14-Dec-18</td><td>11-Dec-18</td></tr>
+                    <tr><td>Grand Québec, Trois-Rivières</td><td>14-Dec-18</td><td>12-Dec-18</td></tr>
+                    <tr><td>Grand Regina / Grand Saskatoon</td><td>14-Dec-18</td><td>11-Dec-18</td></tr>
+                    <tr><td>Grand Saint John / Moncton</td><td>14-Dec-18</td><td>11-Dec-18</td></tr>
+                    <tr><td>Grand St. John's</td><td>14-Dec-18</td><td>07-Dec-18</td></tr>
+                    <tr><td>Grand Vancouver / Grand Victoria</td><td>12-Dec-18</td><td>06-Dec-18</td></tr>
+                    <tr><td>Grand Winnipeg</td><td>14-Dec-18</td><td>11-Dec-18</td></tr>
+                    <tr><td>Le sud-ouest de l'Ontario (tous les codes postaux commençant par N)</td><td>14-Dec-18</td><td>12-Dec-18</td></tr>
+                    <tr><td>L'ouest de l'Ontario (tous les codes postaux commençant par P)</td><td>14-Dec-18</td><td>11-Dec-18</td></tr>
+                    <tr><td>L'ouest du Québec (tous les codes postaux commençant par J)</td><td>14-Dec-18</td><td>12-Dec-18</td></tr>
+                    <tr><td colspan="3" style="border: none;padding: 1em 0 0.5em;"><strong>Metropolitain Rural Canada</strong></td></tr>
+                    <tr><td>Alberta (tous les codes postaux commençant par T)</td><td>13-Dec-18</td><td>07-Dec-18</td></tr>
+                    <tr><td>British Columbia (tous les codes postaux commençant par V)</td><td>13-Dec-18</td><td>07-Dec-18</td></tr>
+                    <tr><td>L'est du Québec (tous les codes postaux commençant par G)</td><td>13-Dec-18</td><td>11-Dec-18</td></tr>
+                    <tr><td>Iqaluit (tous les codes postaux commençant par X0A0A1, X0A0H0 and X0A1H0)</td><td>12-Dec-18</td><td>12-Dec-18</td></tr>
+                    <tr><td>Manitoba (tous les codes postaux commençant par R)</td><td>13-Dec-18</td><td>10-Dec-18</td></tr>
+                    <tr><td>Nouveau-Brunswick (tous les codes postaux commençant par E)</td><td>13-Dec-18</td><td>10-Dec-18</td></tr>
+                    <tr><td>Terre-Neuve (tous les codes postaux commençant par A)</td><td>13-Dec-18</td><td>06-Dec-18</td></tr>
+                    <tr><td>Nouvelle-Écosse (tous les codes postaux commençant par B)</td><td>13-Dec-18</td><td>10-Dec-18</td></tr>
+                    <tr><td>Île-du-Prince-Édouard (tous les codes postaux commençant par C)</td><td>13-Dec-18</td><td>07-Dec-18</td></tr>
+                    <tr><td>Saskatchewan (tous les codes postaux commençant par S)</td><td>13-Dec-18</td><td>10-Dec-18</td></tr>
+                    <tr><td>Whitehorse (tous les codes postaux commençant par Y1A)</td><td>13-Dec-18</td><td>05-Dec-18</td></tr>
+                    <tr><td>Yellowknife (tous les codes postaux commençant par X1A)</td><td>13-Dec-18</td><td>06-Dec-18</td></tr>
+                    <tr><td>Yukon / Nunavut / NWT</td><td>07-Dec-18</td><td>27-Nov-18</td></tr>
+                </tbody>
+            </table>
+        </div>
       </div>
+      
       <div id="accordionShipping" class="accordion">
           <div class="card">
               <div class="card-header">
