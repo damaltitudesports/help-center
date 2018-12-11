@@ -1,1013 +1,1158 @@
 <style>
-        div#table-container{
-            
-        }
-        table#shipping-holidays{
-            line-height: 1.2em;
-            margin-bottom:0;
-        }
-        table#shipping-holidays td{
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-        }
-        table#shipping-holidays td, table#shipping-holidays th{
-            padding:0.3rem 0.3rem;
-        }
-        table#shipping-holidays tr.last-row td{
-            border: none;
-        }
-    </style>
+    table#shipping-holidays{
+        line-height: 1.2em;
+        margin-bottom:0;
+    }
+    table#shipping-holidays td{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    table#shipping-holidays td, table#shipping-holidays th{
+        padding:0.3rem 0.3rem;
+    }
+    table#shipping-holidays tr.last-row td{
+        border: none;
+    }
+</style>
 <div class="col-12 col-md-3" id="faq-sidebar">
-  <h2 class="pt-1">Centre d’assistance</h2>
-  <ul class="left-menu help-center list-unstyled d-none d-md-block">
-      <li class="h4"><a href="#shipping">Livraison</a></li>
-      <li class="h4"><a href="#returns">Retours</a></li>
-      <li class="h4"><a href="#price">Politique de prix</a></li>
-      <li class="h4"><a href="#taxes">Taxes de vente</a></li>
-      <li class="h4"><a href="#warranty">Garantie</a></li>
-      <li class="h4"><a href="#marketplace">Place de marché</a> <i class="alti-icon alti-icon-marketplace"></i></li>
-      <li class="h4 d-md-none"><a href="#faq">FAQ</a></li>
-      <li class="h4"><a href="#contact">Nous contacter</a></li>
-  </ul>
-  <h2 class="d-none d-md-block faq-menu">FAQ</h2>
-  <ul class="top-questions list-unstyled d-none d-md-block">
-      <li><a href="#faq_getTracking" onclick="$('#faq').collapse('show')">Où trouver mon numéro de suivi?</a></li>
-      <li><a href="#faq_storeCredit" onclick="$('#faq').collapse('show')">Comment puis-je utiliser mes crédits?</a></li>
-      <li><a href="#faq_discountWork" onclick="$('#faq').collapse('show')">Pourquoi mon code rabais ne fonctionne-t-il pas?</a></li>
-      <li><a href="#faq_discountCode" onclick="$('#faq').collapse('show')">Où dois-je entrer mon code rabais?</a></li>
-      <li><a href="#estimatedDelivery" onclick="$('#shipping').collapse('show')">Où puis-je trouver ma date prévue de livraison ?</a></li>
-  </ul>
-  <h4 class="h4 d-none d-md-block">– <a href="#faq">Voir toute la FAQ</a></h4>
-</div><!--END #faq-sidebar-->
+	<h2 class="pt-1">Centre d’assistance</h2>
+	<ul class="left-menu help-center list-unstyled d-none d-md-block">
+		<li class="h4"><a href="#shipping">Livraison</a></li>
+		<li class="h4"><a href="#returns">Retours</a></li>
+		<li class="h4"><a href="#price">Politique de prix</a></li>
+		<li class="h4"><a href="#taxes">Taxes de vente</a></li>
+		<li class="h4"><a href="#warranty">Garantie</a></li>
+		<li class="h4"><a href="#marketplace">Place de marché</a> <i class="alti-icon alti-icon-marketplace"></i></li>
+		<li class="h4 d-md-none"><a href="#faq">FAQ</a></li>
+		<li class="h4"><a href="#contact">Nous contacter</a></li>
+	</ul>
+	<h2 class="d-none d-md-block faq-menu">FAQ</h2>
+	<ul class="top-questions list-unstyled d-none d-md-block">
+		<li><a href="#faq_getTracking" onclick="$('#faq').collapse('show')">Où trouver mon numéro de suivi?</a></li>
+		<li><a href="#faq_storeCredit" onclick="$('#faq').collapse('show')">Comment puis-je utiliser mes crédits?</a></li>
+		<li><a href="#faq_discountWork" onclick="$('#faq').collapse('show')">Pourquoi mon code rabais ne fonctionne-t-il pas?</a></li>
+		<li><a href="#faq_discountCode" onclick="$('#faq').collapse('show')">Où dois-je entrer mon code rabais?</a></li>
+		<li><a href="#estimatedDelivery" onclick="$('#shipping').collapse('show')">Où puis-je trouver ma date prévue de livraison ?</a></li>
+	</ul>
+	<h4 class="h4 d-none d-md-block">– <a href="#faq">Voir toute la FAQ</a></h4>
+</div>
+<!--END #faq-sidebar-->
 <div class="col-12 col-md-9" id="ContainerAll">
-  <!-- SHIPPING -->
-  <div class="content" id="shipping">
-      <h1>Livraison</h1>
-      <div class="faq-search">
-          <input type="text" placeholder="Rechercher dans Livraison" />
-      </div>
-      <div style="background-image: url(https://cdn.shopify.com/s/files/1/1230/9376/files/ss-banner-bg-dots.png);padding: 0 1em 1em;margin: 1.5em 0 2em;">
-        <p style="font-weight: 500;font-size: 1.5em;margin-top: 0.5em;">Recevez votre commande à temps pour Noël.</p>
-        <p>Consultez ci-dessous les dates limites de commande en fonction de la destination et de la méthode d’envoi. </p>
-        <p><strong>Xpresspost est GRATUIT sur les commandes de plus de 99$.</strong> Pour un temps limité, au Canada seulement. </p>
-        <p style="border: 1px solid rgba(0,0,0,0.1); padding: 1em; margin-right: 0.5em; background-color: #fff;line-height: 1.7em;">Nous suivons avec attention les retards de livraison de Postes Canada dus aux grèves tournantes ayant pris fin le 27 novembre. Les dates suivantes sont les <strong>dernières journées</strong> pour commander afin de recevoir votre colis à temps pour Noël. Les dates diffèrent selon de la destination de votre envoi et de la méthode de livraison choisie. Les <strong>dates limites</strong> de commandes ci-dessous prennent en compte nos délais de traitement, les délais de livraison standard de Postes Canada, ainsi que les retards maximum prévus et fournis par Postes Canada. Des mises à jour quotidiennes seront publiées sur cette page.</p>
-        <p style="font-weight: 500;font-size: 1.3em;margin-top: 0.5em;">Dates limites de commande selon la région d’envoi de votre colis et la méthode de livraison</p>
-        <p><i style="opacity: 0.55;white-space: nowrap;">(Dernière mise à jour : 7 décembre 2018)</i></p>
-        <div id="table-container">
-            <table id="shipping-holidays">
-                <thead style="vertical-align: bottom;">
-                    <tr><th>Région</th><th>Xpresspost</th><th>Colis accélérés</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td colspan="3" style="border: none;padding: 1em 0 0.5em;"><strong>Grand Montréal, Toronto et Ottawa</strong></td></tr>
-                    <tr><td>Grand Ottawa, Kingston, Belleville</td><td>17-Dec-18</td><td>13-Dec-18</td></tr>
-                    <tr><td>Grand Toronto (tous les codes postaux commençant par M)</td><td>13-Dec-18</td><td>11-Dec-18</td></tr>
-                    <tr><td>Guelph, Cambridge, London, Windsor, Owen Sound</td><td>17-Dec-18</td><td>13-Dec-18</td></tr>
-                    <tr><td>Longueuil, Gatineau</td><td>17-Dec-18</td><td>17-Dec-18</td></tr>
-                    <tr><td>Montréal, Laval (tous les codes postaux commençant par H)</td><td>17-Dec-18</td><td>17-Dec-18</td></tr>
-                    <tr class="last-row"><td>Le sud de l'Ontario (tous les codes postaux commençant par L)</td><td>17-Dec-18</td><td>12-Dec-18</td></tr>
-                    <tr><td colspan="3" style="border: none;padding: 1em 0 0.5em;"><strong>Canada métropolitain</strong></td></tr>
-                    <tr><td>Sud-Est de l'Ontario (tous les codes postaux commençant par K)</td><td>14-Dec-18</td><td>12-Dec-18</td></tr>
-                    <tr><td>Grand Calgary / Grand Edmonton</td><td>14-Dec-18</td><td>10-Dec-18</td></tr>
-                    <tr><td>Grand Charlottetown</td><td>14-Dec-18</td><td>10-Dec-18</td></tr>
-                    <tr><td>Grand Halifax</td><td>14-Dec-18</td><td>11-Dec-18</td></tr>
-                    <tr><td>Grand Québec, Trois-Rivières</td><td>14-Dec-18</td><td>12-Dec-18</td></tr>
-                    <tr><td>Grand Regina / Grand Saskatoon</td><td>14-Dec-18</td><td>11-Dec-18</td></tr>
-                    <tr><td>Grand Saint John / Moncton</td><td>14-Dec-18</td><td>11-Dec-18</td></tr>
-                    <tr><td>Grand St. John's</td><td>14-Dec-18</td><td>07-Dec-18</td></tr>
-                    <tr><td>Grand Vancouver / Grand Victoria</td><td>12-Dec-18</td><td>06-Dec-18</td></tr>
-                    <tr><td>Grand Winnipeg</td><td>14-Dec-18</td><td>11-Dec-18</td></tr>
-                    <tr><td>Sud-ouest de l'Ontario (tous les codes postaux commençant par N)</td><td>14-Dec-18</td><td>12-Dec-18</td></tr>
-                    <tr><td>Ouest de l’Ontario (tous les codes postaux commençant par P)</td><td>14-Dec-18</td><td>11-Dec-18</td></tr>
-                    <tr><td>Ouest du Québec (tous les codes postaux commençant par J)</td><td>14-Dec-18</td><td>12-Dec-18</td></tr>
-                    <tr><td colspan="3" style="border: none;padding: 1em 0 0.5em;"><strong>Canada rural</strong></td></tr>
-                    <tr><td>Alberta (tous les codes postaux commençant par T)</td><td>13-Dec-18</td><td>07-Dec-18</td></tr>
-                    <tr><td>British Columbia (tous les codes postaux commençant par V)</td><td>13-Dec-18</td><td>07-Dec-18</td></tr>
-                    <tr><td>Est du Québec (tous les codes postaux commençant par G)</td><td>13-Dec-18</td><td>11-Dec-18</td></tr>
-                    <tr><td>Iqaluit (tous les codes postaux commençant par X0A0A1, X0A0H0 and X0A1H0)</td><td>12-Dec-18</td><td>12-Dec-18</td></tr>
-                    <tr><td>Manitoba (tous les codes postaux commençant par R)</td><td>13-Dec-18</td><td>10-Dec-18</td></tr>
-                    <tr><td>Nouveau-Brunswick (tous les codes postaux commençant par E)</td><td>13-Dec-18</td><td>10-Dec-18</td></tr>
-                    <tr><td>Terre-Neuve (tous les codes postaux commençant par A)</td><td>13-Dec-18</td><td>06-Dec-18</td></tr>
-                    <tr><td>Nouvelle-Écosse (tous les codes postaux commençant par B)</td><td>13-Dec-18</td><td>10-Dec-18</td></tr>
-                    <tr><td>Île-du-Prince-Édouard (tous les codes postaux commençant par C)</td><td>13-Dec-18</td><td>07-Dec-18</td></tr>
-                    <tr><td>Saskatchewan (tous les codes postaux commençant par S)</td><td>13-Dec-18</td><td>10-Dec-18</td></tr>
-                    <tr><td>Whitehorse (tous les codes postaux commençant par Y1A)</td><td>13-Dec-18</td><td>05-Dec-18</td></tr>
-                    <tr><td>Yellowknife (tous les codes postaux commençant par X1A)</td><td>13-Dec-18</td><td>06-Dec-18</td></tr>
-                    <tr><td>Yukon / Nunavut / NWT</td><td>07-Dec-18</td><td>27-Nov-18</td></tr>
-                </tbody>
-            </table>
-        </div>
-      </div>
-      
-      <div id="accordionShipping" class="accordion">
-          <div class="card">
-              <div class="card-header">
-                  <h2>Livraison gratuite au Canada pour toutes commandes de 49 $ et plus</h2>
-              </div>
-              <div class="card-body">
-                  <p>Chez Altitude Sports, la livraison standard avec Postes Canada est offerte gratuitement à l’intérieur du Canada avec toute commande de 49$ et plus, avant taxe et après rabais applicables.</p>
-                  <p>Des surcharges peuvent s'appliquer pour certains envois exceptionnels de par leur dimension, leur poids ou l'éloignement de l'adresse de livraison. Vous pouvez facilement vérifier si votre commande est admissible à la  livraison standard lorsque vous magasinez sur notre site.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Délais de traitement de commande</h2>
-              </div>
-              <div class="card-body">
-                  <p>Lorsque vous passez une commande sur le site, les délais de traitement varient en fonction du moment du moment où vous faites la commande. L'équipe d'Altitude Sports traite les commandes du lundi au vendredi, entre 9 h et 17 h (HNE). Si vous avez passé une commande le vendredi soir, celle-ci sera traitée le lundi suivant. Les délais de traitement sont calculés dans les temps de livraison mentionnés ci-haut au moment de choisir votre méthode d’envoi.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Délais de livraison</h2>
-              </div>
-              <div class="card-body" id="estimatedDelivery">
-                  <p>Vous obtenez le délai de livraison prévu au moment de choisir la méthode et la compagnie de livraison, dès la première étape lorsque vous complétez votre panier d'achats. L'information sur les délais de livraison est fournie par les compagnies de livraison. Ces délais tiennent compte du temps de traitement de votre commande. Notez que les jours ouvrables et les fins de semaine ne sont pas comptés dans le délai de livraison estimé. Au Canada, Altitude Sports s'engage à vous livrer votre colis dans les délais indiqués. Veuillez noter qu'il se peut que votre colis arrive avant le délai prévu par la compagnie de livraison.</p>
-                  <p>Pour une livraison au Canada, si le colis arrive après le délai indiqué sur Altitude Sports, établie par la compagnie de livraison au moment ou vous avez passé votre commande, Altitude Sports s'engage à rembourser les frais de livraison payés par le client. Des retards causés par des circonstances hors de notre contrôle peuvent subvenir. Altitude Sports ne se porte pas responsable des retards causés par ce type d'événement.</p>
-                  <p>Pour les livraisons aux États-Unis ou ailleurs dans le monde, le délai prévu constitue une estimation, mais ne peut être garantie par Altitude Sports. La sous-traitance à des compagnies de postes locales et les délais de traitement des douanes peuvent rallonger les délais prévus. Pour plus d’information à ce sujet, veuillez consulter <a href="#shipping_13">la sous-section.</a></p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Cueillette en magasin : une autre option pratique et gratuite</h2>
-              </div>
-              <div class="card-body">
-                  <p>Si vous habitez la région de Mont-Tremblant, vous pouvez aussi venir chercher vos achats dans notre magasin, sans frais de livraison. Il suffit de sélectionner l'option gratuite de « Cueillette en magasin » dans le choix de vos méthodes de livraison du panier d'achats. Veuillez prévoir un délai de 7 à 8 jours ouvrables pour cette option de ramassage. Ce délai s'explique par le fait que les transferts entre l'entrepôt de Montréal et la boutique sont faits une fois par semaine. Les clients sont contactés par téléphone dès que leur colis arrive en magasin. Veuillez noter que par mesure de sécurité, Altitude Sports exige une copie de votre facture, votre carte de crédit et deux cartes d'identité lorsque vous venez chercher votre commande en magasin. Vous devrez aussi signer un document attestant que vous avez récupéré votre colis.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Frais de livraison</h2>
-              </div>
-              <div class="card-body">
-                  <p>Vous connaîtrez le montant des frais de livraison une fois la compagnie de livraison choisie, à la première étape de votre panier d'achats.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Réception et récupération</h2>
-              </div>
-              <div class="card-body">
-                  <p>Pour toutes les livraisons effectuées par FedEx, nous exigeons une signature de confirmation de réception par le client lui-même. Cela protège le client et Altitude Sports de possibles vols ou de conflits en cas d’erreur de livraison.</p>
-                  <p>Bien que les dates de livraison soient respectées dans la grande majorité des cas, il est conseillé de prévoir un délai tampon de 3 jours ouvrables entre le moment de réception et le moment où vous comptez utiliser vos nouveaux achats. De cette manière, si le facteur se présente à votre adresse et que vous n'êtes pas là, vous aurez assez de temps pour passer chercher votre colis au bureau de poste dans les jours suivants. Aussi, si un désastre naturel, une grève des postes ou tout autre événement hors du contrôle d'Altitude Sports devaient retarder la livraison de votre colis, ces 3 jours ouvrables pourraient faire la différence entre partir en voyage dans avec ou sans votre nouveau sac à dos.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Annulation de commande</h2>
-              </div>
-              <div class="card-body">
-                  <p>Si vous désirez annuler une commande, veuillez contacter notre service à la clientèle le plus rapidement possible au 1-855-585-6266 ou par clavardage pour que nous <p>vérifions l’état de votre commande. Si cette dernière est toujours en traitement, nous pourrons l’annuler.</p>
-                  Si vous devez nous contacter en dehors de nos heures d’ouvertures, veuillez nous écrire à <a href="mailto:info@altitude-sports.com">info@altitude-sports.com</a> et indiquer dans le titre du courriel : « ANNULATION DE LA COMMANDE #0012345 ».</p>
-                  <p>Veuillez noter que nous expédions la majorité de nos commandes en 24 heures. Si la commande est déjà expédiée, nous ne pouvons malheureusement pas l’annuler.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Où faire livrer votre colis?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Les compagnies de livraison utilisées par Altitude Sports livrent la plupart du temps le jour, entre 9 h et 18 h. Altitude Sports suggère de faire livrer votre colis à l'endroit où vous passez le plus de votre temps durant la journée. Vous mettez ainsi les chances de votre côté de recevoir votre colis directement, sans avoir à aller le chercher à un comptoir postal.</p>
-                  <p>Les clients doivent s'appliquer à fournir l'adresse de livraison exacte et complète afin d'éviter des frais de retour dans le cas où la compagnie de livraison ne serait pas en mesure de remettre le colis à l’adresse indiquée.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Refus de livraison, non-réclamation d’un colis ou livraison à la mauvaise adresse</h2>
-              </div>
-              <div class="card-body">
-                  <p>Si vous refusez de prendre possession de votre colis lors de la livraison, celui-ci est retourné à notre entrepôt de Montréal. Les frais de livraisons pour ce retour sont assumés par Altitude Sports. Il en est de même pour les paquets non réclamés après une ou plusieurs tentatives de livraison à votre domicile et après un certain nombre de jours en attente au comptoir postal. Ces paramètres varient selon la compagnie de livraison sélectionnée. Voici le lien vers les pages explicatives <a href="http://www.canadapost.ca/cpo/mc/personal/support/helpcentre/tracking/attempted_delivery.jsf?LOCALE=fr">Postes Canada</a> et <a href="http://http://www.fedex.com/">FedEx</a> à ce sujet. Les colis livrés à une mauvaise adresse par le client ou dont l'adresse est incomplète sont aussi retournés chez Altitude Sports.</p>
-                  <p>Mis à part le refus d'un paquet parce qu'il a été endommagé dans le transport ou une erreur d'adresse qui n'a pas été causée par le client, Altitude Sports ne se porte pas responsable des frais postaux, droits de douane et autres taxes relatives au retour d'un envoi vers son entrepôt.</p>
-                  <p>Si nous refusons le retour de vos items ou que vous avez fourni une adresse de livraison erronée et que nous devons vous réexpédier votre commande, des frais de 25 $ seront imposés à nos clients canadiens pour couvrir les frais de réexpédition. Pour les clients provenant des États-Unis, le coût est de 40 $. Pour les commandes internationales, le coût de réexpédition est de 75 $. Nous vous contacterons advenant que votre colis nous soit retourné. Si après 10 jours ouvrables, nous sommes sans nouvelles de votre part, nous vous rembourserons votre commande, en soustrayant les frais d’expédition.</p>
-                  <p>Si votre commande nous revient en « Retour à l’expéditeur » et que vous ne désirez plus vous faire réexpédier cette dernière et préférez un remboursement, nous déduirons 15$ de votre remboursement pour couvrir les frais de retour de commandes au Canada. Pour les commandes nous revenant des États-Unis et autres pays à l’International, le service à la clientèle vous contactera pour plus de détails.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Suivi de votre commande</h2>
-              </div>
-              <div class="card-body">
-                  <p>Altitude Sports vous permet de suivre les étapes de traitement et de livraison de votre commande si vous l'avez passée avec votre compte client. Vous pouvez vérifier le statut de votre commande en vous <a target="_blank" href="/account/login">connectant à votre compte</a> et en suivant les étapes mentionnées ci-bas. Si vous avez passé votre commande en tant qu'invité (sans créer de compte client), vous pouvez suivre l'évolution de votre commande uniquement via votre boîte de réception de courriels.</p>
-                  <p>Vous savez déjà comment consulter l'état de votre commande?</p>
-                  <p><a href="/account/login">Connectez-vous à votre compte maintenant.</a></p>
-                  <p>Dès que vous passez votre commande, vous recevez un courriel de confirmation avec votre numéro de commande. Une fois votre colis emballé et prêt à être ramassé par la compagnie de livraison, vous recevrez un courriel avec votre facture. Vous recevrez aussi un courriel avec le numéro de suivi et les liens nécessaires pour suivre l'évolution de la livraison. Altitude Sports recommande d'ajouter info@altitude-sports.com à votre carnet d'adresses afin que les courriels de suivi n'aboutissent pas dans vos courriels indésirables.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Compagnies de livraison</h2>
-              </div>
-              <div class="card-body">
-                  <p>Altitude Sports fait confiance à Postes Canada et à FedEx pour livrer vos commandes. Nous croyons que ces compagnies proposent l’offre la plus complète et le service le plus rapide pour nos clients et pour nous.</p>
-                  <p>Pour savoir quelle méthode de livraison vous convient le mieux, veuillez suivre les instructions suivantes:</p>
-                  <p>Une fois rendu à la caisse dans la section Livraison, vous pourrez sélectionner la compagnie de livraison de votre choix tout en voyant les différents coûts d’envoi.</p>
-                  <p>Veuillez noter que seul Postes Canada peut livrer dans une boîte postale.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Livraison au Canada</h2>
-              </div>
-              <div class="card-body">
-                  <p>Pour les livraisons au Canada, les taxes de vente facturées dépendent de la destination de la commande, c'est-à-dire l'endroit où la commande est livrée, et pas de l’adresse de facturation. <a href="#taxes">Cliquez-ici pour en savoir plus.</a></p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Livraison à l'extérieur du Canada</h2>
-              </div>
-              <div class="card-body">
-                  <p>Des droits de douane et taxes d’importation pourraient être chargés par le pays de destination. Ces frais supplémentaires sont la responsabilité de l’acheteur. Altitude Sports n’a aucun contrôle sur ces frais, et ne peut en estimer le montant. Pour en savoir davantage, veuillez vous référer aux services frontaliers du pays de destination.</p>
-                  <p><strong>Toutes les commandes livrées à l'extérieur du Canada et des États-Unis sont expédiées par FedEx.</strong></p>
-                  <p class="subtitle">États-Unis</p>
-                  <p>Veuillez noter qu'à cause d'accords commerciaux avec quelques fabricants, Altitude Sports ne peut livrer certaines marques de produits aux États-Unis. Vous pouvez vérifier si un produit est disponible pour la livraison aux États-Unis, en repérer l'un des icônes suivants dans la page produit ou à côté de la description du produit dans votre panier d'achats :</p>
-                  <ul>
-                      <li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/shipping-worldwide.png" style="float: none;" /> Le produit peut être livré partout dans le monde</li>
-                      <li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada-us.png" style="float: none;" /> Le produit peut être livré au Canada et aux États-Unis seulement</li>
-                      <li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada.png" style="float: none;" /> Le produit peut être livré au Canada seulement</li>
-                  </ul>
-                  <p>Toutes les commandes livrées aux États-Unis sont expédiées par Postes Canada. Les commandes ne sont pas assujetties aux taxes canadiennes. Puisque les colis passent par les douanes, ils sont assujettis aux droits de douane à l'importation, aux taxes américaines et aux frais d'administration douanière. Dans la plupart des cas, une facture douanière payable au moment de la livraison accompagnera votre colis ou suivra par courrier. Les destinataires sont responsables et tenus d'acquitter ces frais, droits et taxes additionnels. Veuillez noter qu'Altitude Sports n'est pas en mesure de fournir des estimations quant aux droits de douane. Il est recommandé de s'informer au bureau des douanes le plus près avant de passer votre commande en ligne.</p>
-                  <p>Des restrictions peuvent aussi s'appliquer sur la livraison de produits dangereux ou hors-normes. Altitude Sports se réserve le droit de refuser la livraison de certains de ces produits à l'extérieur du Canada en tout temps, et ce, sans préavis.</p>
-                  <p class="subtitle">Ailleurs dans le monde</p>
-                  <p>Veuillez noter qu'à cause d'accords commerciaux avec quelques fabricants, Altitude Sports ne peut livrer certaines marques de produits à l'extérieur du Canada et des États-Unis.</p>
-                  <p>Vous pouvez vérifier si un produit est disponible pour la livraison à l'extérieur du Canada et des États-Unis, en repérant l'icône suivant dans la page produit ou à côté de la description du produit dans votre panier d'achats :</p>
-                  <ul>
-                      <li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/shipping-worldwide.png" style="float: none;" /> Le produit peut être livré partout dans le monde</li>
-                  </ul>
-                  <p>Les icônes suivants signifient que le produit en question peut seulement être livré au Canada et/ou aux États-Unis :</p>
-                  <ul>
-                      <li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada-us.png" style="float: none;" /> Le produit peut être livré au Canada et aux États-Unis seulement</li>
-                      <li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada.png" style="float: none;" /> Le produit peut être livré au Canada seulement</li>
-                  </ul>
-                  <p>Veuillez noter que les produits Nobis peuvent être livrés partout dans le monde sauf en Corée du Sud et en Europe.</p>
-                  <p>Si par mégarde, vous passez votre commande pour plusieurs produits et qu'un d'eux ne peut être livré à l'adresse fournie, Altitude Sports ajustera votre commande de manière à enlever le produit en question et livrera le reste de celle-ci.</p>
-                  <p>Toutes les commandes livrées à l'extérieur du Canada et des États-Unis sont expédiées par FedEx. Les commandes ne sont pas assujetties aux taxes canadiennes. Puisque les colis passent par les douanes, ils sont assujettis aux droits de douane à l'importation, aux taxes du pays où le colis est livré et aux frais d'administration douanière. Dans la plupart des cas, une facture douanière payable au moment de la livraison accompagnera votre colis ou suivra par courrier. Les destinataires sont responsables et tenus d'acquitter ces frais, droits et taxes additionnels. Veuillez noter qu'Altitude Sports n'est pas en mesure de fournir des estimations quant aux droits de douane. Il est recommandé de s'informer au bureau des douanes le plus près avant de passer votre commande en ligne.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Frais de livraison pour les États-Unis</h2>
-              </div>
-              <div class="card-body">
-                  <p>Des frais de livraison s’appliquent pour les commandes de moins de 99 $ (avant taxes et frais de livraison) pour les États-Unis continentaux. La livraison pour les commandes de plus de 99 $ (avant taxes et frais de livraison) est gratuite pour les États-Unis continentaux. Prévoyez de 2 à 5 jours ouvrables pour la livraison.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Livraison en Europe</h2>
-              </div>
-              <div class="card-body">
-                  <p>Altitude Sports ne peut livrer en Europe en raison du RGPD.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Restrictions pour produits dangereux ou hors-normes</h2>
-              </div>
-              <div class="card-body">
-                  <p>Des restrictions peuvent aussi s'appliquer sur la livraison de produits dangereux ou hors-normes. Altitude Sports se réserve le droit de refuser la livraison de certains de ces produits à l'extérieur du Canada en tout temps, et ce, sans préavis.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Commandes de la Place de marché</h2>
-              </div>
-              <div class="card-body">
-                  <p>Pour les articles provenant des vendeurs de la Place de marché (voir la page du vendeur <a href="/pages/marketplace-osprey"><u>Osprey</u></a>), Altitude Sports n’est pas responsable de la livraison ou de l’expédition.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- RETURNS -->
-  <div class="content" id="returns">
-      <h1>Retours</h1>
-      <div class="faq-search">
-          <input type="text" placeholder="Rechercher dans Retours" />
-      </div>
-      <div id="accordionReturns" class="accordion">
-          <!-- FREE RETURN -->
-          <!--<div class="row no-gutters my-4" style="background: #a6dbd3;">
-              <div class="d-none d-md-block col-4" style="background: url('https://cdn.shopify.com/s/files/1/1199/9020/files/bg-free-returns') top right no-repeat; background-size: cover;"></div>
-              <div class="col-12 col-md-8 pt-3 px-3"><span class="h3 text-white" style="line-height: 1.2;"><span class="h3 text-white" style="line-height: 1.2;">Nouveau client? Profitez du retour gratuit sur votre première commande<span></span></span>
-                  </span>
-                  <p>Pour vous simplifier la vie, nous offrons le retour gratuit sur votre toute première commande. Commandez n’importe quel produit, dans les couleurs et grandeurs de votre choix, et retournez à nos frais les articles que vous ne désirez pas conserver. S’applique sur les commandes livrées au Canada seulement. Non applicable pour les articles provenant des vendeurs de la Place de marché. Un seul bordereau de retour fourni.</p>
-              </div>
-          </div>-->
-          <!-- END FREE RETURN -->
-          <div class="mt-4">
-              <div class="row mx-0 easy-return">
-                  <div class="col-12 mt-2 pt-3 px-3">
-                      <h2 class="h1"><strong>Retours simples et rapides</strong></h2>
-                      <span class="h3">incluant les articles en solde</span>
-                      <p class="description">Pour gagner du temps, nous vous offrons la possibilité d’essayer différentes tailles ou couleurs d’un produit et de nous les retourner dans les 90 jours suivant l’achat. Nous avons inclus une étiquette de retour pré remplie à l’intérieur de votre colis afin que vous n’ayez pas à imprimer et à remplir un formulaire de retour. Remballez simplement le produit que vous désirez nous retourner, collez l’étiquette sur le paquet et déposez-le à un bureau Poste Canada près de chez vous.</p>
-                  </div>
-              </div>
-              <!-- RETURN STEPS -->
-              <div class="row mx-0 easy-return">
-                  <div class="col-12 col-lg-4 py-2"><img class="d-inline-block align-middle" src="https://cdn.shopify.com/s/files/1/1230/9376/files/easy-return-1.png" width="100px" height="100px" /> <span class="h4 d-inline-block align-middle pl-2">Politique de retour de 90 jours</span></div>
-                  <div class="col-12 col-lg-4 py-2"><img class="d-inline-block align-middle" src="https://cdn.shopify.com/s/files/1/1230/9376/files/easy-return-2.png" width="100px" height="100px" /> <span class="h4 d-inline-block align-middle pl-2">Étiquette de retour incluse dans le colis</span></div>
-                  <div class="col-12 col-lg-4 py-2"><img class="d-inline-block align-middle" src="https://cdn.shopify.com/s/files/1/1230/9376/files/easy-return-2.png" width="100px" height="100px" /> <span class="h4 d-inline-block align-middle pl-2">Déposez le colis à votre bureau Postes Canada local</span></div>
-              </div>
-              <div class="row mx-0 easy-return">
-                  <div class="col-12 p-3">
-                    <p>Nous allons déduire 13 $ plus les taxes du montant de votre remboursement pour couvrir les frais de retour. Vous pouvez également <a href="/products/membership">devenir membre à vie</a> afin de bénéficier des retours gratuits*.</p>
-                    <p><a href="#first-time">Nouveau client? Profitez du retour gratuit sur votre première commande*</a></p>
-                    <p><i>* non applicable pour les articles provenant des vendeurs de la <a href="#marketplace">Place de marché.</a></i></p>
-                  </div>
-              </div>
-          </div>
-          <div class="border-bottom border-dark pb-2">
-              <div class="row mx-0 ">
-                  <div class="col-12"><span class="h2 pt-4 pb-3">Retournez un article en 4 étapes faciles</span></div>
-              </div>
-              <ol class="return-steps list-group-item row mx-0 border-0">
-                  <li class="col-12 col-md-6"><span class="h3 d-inline">Localisez l’étiquette de retour :</span>
-                      <p>Vérifiez l’emballage ou le courriel de confirmation de votre commande pour savoir qui a reçu et livré votre commande, à savoir : Altitude Sports ou un vendeur de la Place de marché. Retirez l’étiquette de retour pré remplie incluse dans votre sac ou votre boîte de livraison.</p>
-                  </li>
-                  <li class="col-12 col-md-6"><span class="h3 d-inline">Remballez votre colis :</span>
-                      <p>Placez les produits que vous désirez retourner dans la boîte ou le sac de livraison et scellez-le.</p>
-                  </li>
-                  <li class="col-12 col-md-6"><span class="h3 d-inline">Appliquez l’étiquette de livraison :</span>
-                      <p>Couvrez l’étiquette de livraison initiale sur le paquet scellé en collant l’étiquette de retour sur l’étiquette de livraison originale.</p>
-                  </li>
-                  <li class="col-12 col-md-6"><span class="h3 d-inline">Expédiez le colis contenant les articles à retourner :</span>
-                      <ul class="mx-0 my-3" style="list-style-type: disc;">
-                          <li>Si l’article a été vendu et expédié par Altitude Sports, l’article doit être renvoyé à Altitude Sports.</li>
-                          <li>Si l’article a été vendu et expédié par un vendeur de la Place de marché, l’article doit être renvoyé au vendeur.</li>
-                          <li>Déposez le colis à votre bureau Poste Canada local, ou à une succursale de la compagnie de livraison qui a été utilisée pour l’envoi de votre colis.</li>
-                      </ul>
-                  </li>
-              </ol>
-              <p class="smaller mb-4">Informations concernant les retours internationaux, <a href="#international-usa-returns">cliquez ici.</a></p>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Nouveau client? Profitez du retour gratuit sur votre première commande</h2>
-              </div>
-              <div class="card-body" id="first-time">
-                  <p>Pour vous simplifier la vie, nous offrons le retour gratuit sur votre toute première commande. Commandez n’importe quel produit, dans les couleurs et grandeurs de votre choix, et retournez à nos frais les articles que vous ne désirez pas conserver. S’applique sur les commandes livrées au Canada seulement. Non applicable pour les articles provenant des vendeurs de la Place de marché. Un seul bordereau de retour fourni.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Politique de retour de 90 jours</h2>
-              </div>
-              <div class="card-body">
-                  <p>Nous faisons tout notre possible pour que vous soyez entièrement satisfait des commandes que vous passez sur Altitude Sports. Pour nous en assurer, nous acceptons les retours dans un délai de 90 jours suivant la réception de votre commande.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Les produits doivent être en parfaite condition</h2>
-              </div>
-              <div class="card-body">
-                  <p>Tous les produits doivent être retournés à Altitude Sports en parfaite condition. Cela signifie que le produit devra répondre aux conditions suivantes :</p>
-                  <ul>
-                      <li>Avoir toutes les étiquettes et tous les autocollants d’origine</li>
-                      <li>Être dans son emballage d’origine accompagné du cintre d’origine (le cas échéant)</li>
-                      <li>Être aussi propre que lorsqu’il vous a été expédié et ne pas être accompagné d’odeurs inhabituelles ou de poils d’animaux/cheveux</li>
-                      <li>Avoir été essayé par-dessus vos sous-vêtements pour des raisons d’hygiène (particulièrement pour les maillots de bain et les sous-vêtements)</li>
-                  </ul>
-                  <p>Veuillez noter que tous les produits sont rigoureusement inspectés dès leur réception.</p>
-                  <p>Altitude Sports se réserve le droit de refuser un retour qui ne respecte pas ces conditions et de le retourner à l’acheteur aux frais de ce dernier. Dans certains cas, des frais de réapprovisionnement pourraient s’appliquer.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Nous remboursons; mais ne faisons pas d’échanges</h2>
-              </div>
-              <div class="card-body">
-                  <p>Notre expérience démontre qu’il est plus avantageux pour tout le monde de ne pas offrir d’échanges parce qu’il est plus simple de vous rembourser un produit au moment du retour. Il est plus rapide et facile de considérer chaque transaction séparément, et de cette façon, vous n’aurez pas à attendre jusqu’à ce que le retour soit complété avant de commander le bon produit. Si vous préfériez une couleur ou une taille différente, simplement commandez le style voulu et retournez-nous le produit non désiré dès que possible. Le fait de passer cette seconde commande élimine le besoin d’attendre que le remboursement soit effectué, et permet d’assurer que le bon produit vous soit livré le plus tôt possible.</p>
-                  <p><strong>Exemple :</strong> si vous souhaitez échanger un manteau de taille S parce que vous pensez que la taille M vous ferait mieux, vous n’avez que deux choses à faire. Premièrement, retournez le manteau de taille S. Vous serez remboursé lorsque le processus sera complété. Deuxièmement, commandez le manteau en taille M, il vous sera livré selon le processus de livraison habituel.</p>
-                  <p><strong>Conseil : Commandez plusieurs tailles, couleurs, ou styles du même produit.</strong></p>
-                  <p>Si vous hésitez parmi plusieurs tailles, couleurs, ou modèles, nous vous recommandons de commander plusieurs produits afin que vous puissiez les comparer et nous renvoyer les produits que vous n’aimez pas. Cette commande unique limitera le nombre de transactions et vous fera gagner du temps, tout en s’assurant que vous obteniez le produit dont vous voulez. Cela garantit également que vous puissiez avoir l’article avant qu’il ne soit épuisé.</p>
-                  <p>Altitude Sports possède plusieurs marques et modèles, mais certains produits sont limités en couleur ou en quantité. Pendant nos soldes, certains styles s’écoulent très rapidement.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Retourner des produits achetés en solde</h2>
-              </div>
-              <div class="card-body">
-                  <p>Si vous avez acheté un produit en solde, vous pouvez le retourner.</p>
-                  <p>Si vous désirez acheter le même produit (même couleur et année de fabrication) dans une autre taille, mais que le produit n’est plus en solde, nous égalerons le prix initial. Veuillez contacter <a href="#contact">le service à la clientèle</a> avant de passer la seconde commande.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Produits non retournables</h2>
-              </div>
-              <div class="card-body">
-                  <p>Nous acceptons le retour de la plupart des produits que nous vendons, incluant ceux à rabais. En raison de la nature de certains produits et notre incapacité de garantir qu’ils seront parfaitement neufs, sécuritaires, et hygiéniques pour le prochain client, certains produits spécifiques sont non retournables. Les mousquetons, les poussettes, et les sacs gonflables pour avalanches sont non retournables.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Retour des produits défectueux, endommagés, ou incorrects</h2>
-              </div>
-              <div class="card-body">
-                  <p>Il incombe au client de vérifier la condition du produit lorsqu’il le reçoit. Dans de rares cas, les produits peuvent s’endommager lors du transport, être défectueux en arrivant, ou nous aurions pu envoyer le mauvais produit par mégarde. Si tel est le cas, il est important que vous contactiez le service à la clientèle dans un délai de 7 jours afin de nous informer des détails. Des dispositions seront prises pour que le client puisse retourner le produit défectueux, incorrect ou endommagé gratuitement et nous lui attribuerons un remboursement intégral.</p>
-                  <p>Pour de plus amples informations concernant un produit sous garantie, veuillez vous référer à <a href="#warranty">notre page Garantie</a>.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Retour de produits achetés avec des Alti Dollars ou des Crédits Expirables</h2>
-              </div>
-              <div class="card-body">
-                  <p>Si vous avez acheté un produit avec des Alti Dollars et que vous voulez retourner ce produit, les Alti Dollars seront reversés dans votre compte au moment où le remboursement sera traité. Si vous achetez un produit combinant des Alti Dollars et une autre méthode de paiement, nous vous rembourserons à partir des mêmes méthodes de paiement utilisées au moment de l’achat.</p>
-                  <p>Si vous avez acheté un produit avec des Crédits Expirables et que vous retournez ce produit, les Crédits Expirables ne seront pas remboursés dans votre compte. Les Crédits Expirables sont à usage unique, nous vous suggérons donc de les utiliser pour des achats que vous serez certain de conserver.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Délais de retour</h2>
-              </div>
-              <div class="card-body">
-                  <p>Les retours sont traités du lundi au vendredi. Ce n’est qu’après avoir accusé réception du colis et vérifié que le contenu est en parfaite condition que nous pouvons commencer le processus de retour. Durant les périodes de pointe et les promotions — notamment du 1er décembre au 15 février — le processus de retour peut prendre jusqu’à 5 jours ouvrables.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Retourner un produit sans notre bordereau de retour</h2>
-              </div>
-              <div class="card-body">
-                  <p>Si vous décidez de ne pas utiliser le bordereau de retour joint à votre colis, vous pouvez retourner votre commande en rapportant votre colis à un point de service du transporteur de votre choix. Veuillez noter qu’Altitude Sports n’accepte les retours que s’ils proviennent de transporteurs, tels que Poste Canada, FedEx, et UPS.</p>
-                  <p>Toutes les commandes que vous souhaitez retourner doivent être envoyées par la poste à notre entrepôt. Pour des raisons de logistiques, notre entrepôt n’est pas ouvert au public.</p>
-                  <strong>Adresse de retour : </strong>
-                  <p>Altitude Sports
-                      <br />Département des retours
-                      <br />333, rue Chabanel O, suite 705
-                      <br />Montreal (Québec) H2N 2E7
-                      <br />Canada</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Retours à notre boutique de Mont-Tremblant</h2>
-              </div>
-              <div class="card-body">
-                  <p>Vous pouvez retourner les produits de votre choix, sans frais, en les rapportant à notre boutique.</p>
-                  <strong>Adresse de la boutique :</strong>
-                  <p>Altitude Sports Mont-Tremblant
-                      <br />2555 rue de L'Aulnaie
-                      <br />Mont-Tremblant (Québec) J8E 0E5
-                      <br />Canada</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Retours internationaux incluant les États-Unis</h2>
-              </div>
-              <div class="card-body" id="international-usa-returns">
-                  <p>Les frais de retours de 13 $ ainsi que les retours gratuits pour nos membres s’appliquent uniquement aux commandes envoyées au Canada. Si vous souhaitez retourner un article et que vous êtes situé aux États-Unis ou ailleurs qu’au Canada, veuillez contacter <a href="#contact">le service à la clientèle d’Altitude Sports</a>. L’un de nos conseillers se fera un plaisir de vous guider à travers toutes les étapes du processus de retour et pourra vous donner une estimation des frais de retour.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Conditions de retour de la Place de marché</h2>
-              </div>
-              <div class="card-body" id="marketplace-return">
-                  <p>Pour retourner un article :</p>
-                  <ul>
-                      <li>Si l’article a été vendu et expédié par Altitude Sports, l’article doit être renvoyé à Altitude Sports.</li>
-                      <li>Si l’article a été vendu et expédié par un vendeur de la Place de marché, l’article doit être renvoyé au vendeur.</li>
-                  </ul>
-                  <p>Déposez le colis à votre bureau Poste Canada local, ou à une succursale de la compagnie de livraison qui a été utilisée pour l’envoi de votre colis. Veuillez prendre note qu’un frais de retour de 13$ s’applique à toutes les commandes passées sur la Place de marché.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- PRICE POLICY -->
-  <div class="content" id="price">
-      <h1>Politique de prix</h1>
-      <div class="faq-search">
-          <input type="text" placeholder="Rechercher dans Politique de prix" />
-      </div>
-      <div id="accordionPrice" class="accordion">
-          <div class="pt-2">
-              <p>Altitude Sports s'engage à offrir à sa clientèle les prix les plus avantageux. Si vous avez une question concernant notre politique d'égalisation des prix ou désirez obtenir un ajustement sur une commande déjà passée, nous vous invitons à contacter notre équipe du service à la clientèle. Un de nos agents se fera un plaisir de vous aider.</p>
-              <p>Toutes les demandes d’égalisation de prix se doivent de respecter les conditions suivantes:</p>
-              <ul>
-                  <li>Si vous trouvez le produit acheté chez Altitude Sports affiché à prix moindre chez un compétiteur, ou si le prix affiché sur notre site web a changé dans les 15 jours suivants la date d'achat, Altitude Sports s'engage à remettre la différence sous forme d'Alti Dollars dans votre compte client ;</li>
-                  <li>Le compétiteur se doit d’être une compagnie basée en Amérique du Nord, ainsi qu’un détaillant autorisé de la marque et du produit en question. De plus, le compétiteur devra être autorisé à expédier la marque et le produit au Canada ;</li>
-                  <li>Le produit doit être identique, c'est à dire de la même marque, modèle, couleur, taille et issu de la même année de fabrication ;</li>
-                  <li>Le produit en question se doit d'être disponible à en faire l'achat immédiat chez le compétiteur, et ce, au prix observé. Nous refuserons les égalisations de prix d'articles en rupture de stock ou de promotions obsolètes ;</li>
-                  <li>Nos agents du service à la clientèle doivent être en mesure de vérifier les éléments pertinents à l'égalisation des prix avec nos compétiteurs par téléphone ou par internet. Les ententes verbales ne seront pas considérées ;</li>
-                  <li>Lorsque nous égalisons le prix d'un compétiteur, nous incluons tous frais de transport qui seraient applicables au prix annoncé. Cela signifie que si le compétiteur vend un produit à 200 $, mais réclame 50 $ afin de couvrir les frais de poste, nous égalerons le prix à 250 $. Cela s'applique également à tous les frais supplémentaires applicables ;</li>
-                  <li>Toutes les demandes d'égalisation de prix seront effectuées exclusivement en dollars canadiens. Si une égalisation de prix est demandée pour un produit vendu en dollars américains, nous nous référerons au taux de change quotidien de la Banque du Canada afin de faire la conversion en dollars canadiens ;</li>
-                  <li>Les sites de vente aux enchères, les ventes au rabais et de liquidation, les produits usagés, les modèles de démonstration ou les sites internet non officiels sont exclus de cette politique. Veuillez noter qu'aucun ajustement de prix n'est possible avec La Dernière Chasse et Amazon ;</li>
-                  <li>Nos prix en ligne correspondent à nos prix en boutique. Nous égalons aussi les prix des détaillants traditionnels et de commerce en ligne qui satisfont nos critères d’égalisation des prix mentionnés plus haut ;</li>
-                  <li>Vous pouvez retourner un article qui a bénéficié d’une égalisation des prix. Si vous désirez acheter le même produit (même couleur et année de fabrication) dans une taille différente, mais que ce dernier n'est plus disponible ou qu’il n’est plus en rabais, il est à l’entière discrétion d’Altitude Sports d’égaler le prix sur le produit de remplacement. Des frais de poste peuvent s'appliquer ;</li>
-                  <li>Vous pouvez retourner un article qui a bénéficié d’une égalisation des prix. Si vous désirez acheter le même produit (même couleur et année de fabrication) dans une taille différente, mais que ce dernier n'est plus en vente, Altitude Sports honorera le prix payé initialement. Des frais de poste pourraient toutefois s'appliquer ;</li>
-                  <li>Nous nous réservons le droit de limiter le nombre d'articles achetés bénéficiant de notre politique d'égalisation des prix ;</li>
-                  <li>Notre égalisation des prix ne peut être jumelée à aucun autre rabais ou promotion additionnelle. Seul le rabais membre de 5 % (s'il y a lieu) peut être appliqué au prix ajusté.</li>
-                  <li>Notre politique d'égalisation des prix ne s’applique pas sur les articles provenant des vendeurs de la Place de marché (voir la page <a href="/pages/marketplace-osprey"><u>Osprey</u></a>).</li>
-              </ul>
-              <p>N'hésitez pas à contacter un des représentants au service à la clientèle d'Altitude Sports si vous avez des questions.</p>
-          </div>
-      </div>
-      <!-- #accordionPrice -->
-  </div>
-  <!-- TAXES -->
-  <div class="content" id="taxes">
-      <h1>Taxes de vente</h1>
-      <div class="faq-search">
-          <input type="text" placeholder="Rechercher dans Taxes de vente" />
-      </div>
-      <div id="accordionTaxes" class="accordion">
-          <div class="pt-2">
-              <p>Les taxes de vente peuvent s'appliquer à votre commande (marchandise et frais de livraison) selon l'endroit où vous faites livrer votre colis.</p>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Commandes livrées au Canada</h2>
-              </div>
-              <div class="card-body">
-                  <table style="width: 400px; font-size: 12px;" cellspacing="0" cellpadding="0" border="0">
-                      <tbody>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Alberta</strong> (AB)</td>
-                              <td class="border-bottom p-1">TPS de 5 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Colombie-Britannique</strong> (BC)</td>
-                              <td class="border-bottom p-1">TPS de 5 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Île-du-Prince-Édouard</strong> (IPE)</td>
-                              <td class="border-bottom p-1">TVH de 14 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Manitoba</strong> (MB)</td>
-                              <td class="border-bottom p-1">TPS de 5 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Nouveau-Brunswick</strong> (NB)</td>
-                              <td class="border-bottom p-1">TVH de 13 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Nouvelle-Écosse</strong> (NS)</td>
-                              <td class="border-bottom p-1">TVH de 15 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Nunavut</strong> (NU)</td>
-                              <td class="border-bottom p-1">TPS de 5 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Ontario</strong> (ON)</td>
-                              <td class="border-bottom p-1">TVH de 13 %*</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Québec</strong> (QC)</td>
-                              <td class="border-bottom p-1">TPS de 5 %
-                                  <br />TVQ de 9,975 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Saskatchewan</strong> (SK)</td>
-                              <td class="border-bottom p-1">TPS de 5 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Terre-Neuve-et-Labrador</strong> (NL)</td>
-                              <td class="border-bottom p-1">TVH de 13 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Territoires du Nord-Ouest</strong> (NT)</td>
-                              <td class="border-bottom p-1">TPS de 5 %</td>
-                          </tr>
-                          <tr>
-                              <td class="border-bottom p-1"><strong>Yukon</strong> (YT)</td>
-                              <td class="border-bottom p-1">TPS de 5 %</td>
-                          </tr>
-                      </tbody>
-                  </table>
-                  <p class="smaller" style="font-size: 0.875em;">*Les clients qui font livrer leur colis en Ontario n'ont pas à payer la « fraction Ontario de la TVH » de 8 % pour les vêtements et les chaussures pour enfants. Des taxes de 5 % s'appliquent donc sur cette catégorie de produits. Puisque la plateforme web d'Altitude Sports ne supporte pas ce genre d'exception, il est conseillé de passer sa commande avec le montant de TVH complet (13 %), et de contacter un des conseillers au service à la clientèle afin que le montant de taxes chargé soit ensuite corrigé manuellement.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Commandes livrées à l'international</h2>
-              </div>
-              <div class="card-body">
-                  <p>Les commandes livrées à l'extérieur du Canada sont expédiées par Postes Canada, et ne sont pas assujetties aux taxes canadiennes. Puisque les colis passent par les douanes, ils sont assujettis aux droits de douane à l'importation, aux taxes du pays où le colis est livré et aux frais d'administration douanière. Dans la plupart des cas, une facture douanière payable au moment de la livraison accompagnera votre colis ou suivra par courrier. Les destinataires sont responsables et tenus d'acquitter ces frais, droits et taxes additionnels. Veuillez noter qu'Altitude Sports n'est pas en mesure de fournir des estimations quant aux droits de douane. Il est recommandé de s'informer au bureau des douanes le plus près avant de passer votre commande en ligne.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- WARRANTY -->
-  <div class="content" id="warranty">
-      <h1>Garantie</h1>
-      <div class="faq-search">
-          <input type="text" placeholder="Rechercher dans Garantie" />
-      </div>
-      <div id="accordionWarranty" class="accordion">
-          <div class="card">
-              <div class="card-header">
-                  <h2>Garantie Altitude Sports</h2>
-              </div>
-              <div class="card-body">
-                  <p>Altitude Sports garantit votre achat pendant la première année. Si un produit vendu s'avère défectueux à l'intérieur de cette période, nous vous offrirons une réparation, un remplacement ou des Alti Dollars, dépendamment de l’état de l’item défectueux et de sa disponibilité sur notre site. Les coûts de livraison pour le renvoi du produit par poste régulière seront défrayés par Altitude Sports, partout au Canada.</p>
-                  <p>Veuillez noter que cette garantie ne couvre pas les usages excessifs, les bris accidentels et l'usure normale.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Retours postaux</h2>
-              </div>
-              <div class="card-body">
-                  <p>Vous avez simplement à contacter notre service à la clientèle, qui vous fournira un bordereau de retour prépayé que vous devrez imprimer et apposer sur votre colis de retour. Svp inscrire « GARANTIE/WARRANTY » sur votre colis et il vous restera seulement à nous le retourner par la poste.</p>
-                  <p>Altitude Sports vous fera ensuite parvenir un courriel vous informant des possibilités de garanties offertes.</p>
-                  <p><strong>Il est très important que le produit retourné soit parfaitement propre et nettoyé, selon les exigences du manufacturier. Altitude Sports se réserve le droit de retourner un produit aux frais du client (aller-retour) si cette condition n’est pas remplie.</strong></p>
-                  <p>Veuillez noter que vous pouvez aussi simplement retourner l’article défectueux en boutique.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Garantie du manufacturier</h2>
-              </div>
-              <div class="card-body">
-                  <p>Une grande proportion des produits vendus sont couverts par des garanties manufacturières prolongées. Celles-ci couvrent les défauts de fabrication, mais pas les abus, les bris accidentels et l'usure normale. Altitude Sports vous invite à contacter un de ses conseillers au service à la clientèle afin de connaître la garantie du manufacturier pour un produit en particulier.</p>
-                  <p>Si vous le désirez, nous nous ferons un plaisir de vous faciliter le retour du produit auprès du manufacturier en question. Veuillez allouer un délai de 4 à 6 semaines.</p>
-                  <p>Les frais postaux pour l'ensemble de l'opération sont à la charge du client et varient selon le cas. Ceux-ci doivent être payés à Altitude Sports au début du processus. Le coût total est défini par le service des garanties, joignable à travers le service à la clientèle. Ces frais incluent le transport postal du client jusqu'à la compagnie et de la compagnie vers le client.</p>
-                  <p><strong>Il est très important que le produit retourné pour un problème de garantie soit parfaitement propre et nettoyé, selon les exigences du manufacturier. Altitude Sports se réserve le droit de retourner un produit aux frais du client (aller-retour) si cette condition n’est pas remplie.</strong></p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- MARKETPLACE -->
-  <div class="content" id="marketplace">
-      <h1 class="mb-4">Place de marché <i class="alti-icon alti-icon-lg alti-icon-marketplace"></i></h1>
-      <div class="faq-search">
-          <input type="text" placeholder="Rechercher dans Place de marché" />
-      </div>
-      <div id="accordionMarketplace" class="accordion">
-          <div>
-              <p class="mt-0">La Place de marché Altitude Sports permet d’offrir à notre clientèle notre expérience de magasinage, tout en offrant une sélection de produits élargie provenant de vendeurs soigneusement choisis.</p>
-              <p>Découvrez les vendeurs <a href="/pages/marketplace-garneau"><u>Garneau</u></a> et <a href="/pages/marketplace-osprey"><u>Osprey</u></a> de la Place de marché Altitude Sports.</p>
-              <p style="margin-top: 2.25rem;">Consultez la FAQ ci-dessous :</p>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Quels sont les avantages de la Place de marché Altitude Sports? </h2>
-              </div>
-              <div class="card-body">
-                  <p>La Place de marché vous donne accès à une plus grande sélection de produits, de tailles et de couleurs des plus courues, provenant directement de l’inventaire d’un vendeur de la Place de marché.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>En tant que membre à vie Altitude Sports, puis-je aussi profiter du rabais membre et des retours gratuits en utilisant la Place de marché?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Le rabais membre et les retours gratuits ne s’appliquent pas sur les articles achetés auprès d’un vendeur de la Place de marché. Le coût d’un retour à un vendeur de la Place de marché est de 13$.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>La livraison est-elle gratuite sur les commandes de 49 $ et plus?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Malheureusement, les articles provenant de la Place de marché ne peuvent pas bénéficier de la livraison gratuite.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Où devrais-je retourner un article provenant de la Place de marché?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Tout article provenant de la Place de marché doit être renvoyé directement au vendeur, et non à Altitude Sports. <a href="#marketplace-return">Consultez les conditions de retour de la Place de marché.</a></p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Puis-je faire égaler le prix, utiliser un code rabais ou utilisez une carte cadeau pour les produits vendus sur la Place de marché?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Les codes rabais et les cartes cadeau ne sont pas applicables sur les produits offerts par les vendeurs de la Place de marché Altitude Sports. Altitude Sports ne peut également pas égaler les prix des produits vendus par un vendeur de la Place de marché Altitude Sports.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Qu’en est-il pour le transport et la livraison des produits achetés d’un vendeur de la Place de marché Altitude Sports?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Les vendeurs de la Place de marché sont entièrement responsables du transport et de la livraison des articles achetés sur la Place de marché Altitude Sports. Si les produits que vous avez commandés ne sont plus disponibles auprès du vendeur de Place de marché, il est de la responsabilité du vendeur d’annuler votre commande.</p>
-              </div>
-          </div>
-      </div>
-      <div class="mt-3">
-          <p style="margin-top: 2rem;">Pour obtenir de plus amples renseignements sur la Place de marché Altitude Sports et nos vendeurs, veuillez consulter les sections suivantes : <a href="#shipping"><u>livraison</u></a>, <a href="#returns"><u>retours</u></a>, <a href="#price"><u>politique de prix</u></a> et <a href="/pages/terms-of-use-conditions-d-utilisation"><u>conditions d’utilisation</u></a>. Pour en apprendre davantage sur la politique de confidentialité de nos vendeurs, veuillez visiter leurs sites Web.</p>
-      </div>
-  </div>
-  <!-- FAQ -->
-  <div class="content" id="faq">
-      <h1>Foire aux questions</h1>
-      <div class="faq-search">
-          <input type="text" placeholder="Rechercher dans FAQ" />
-      </div>
-      <div id="accordionFAQ" class="accordion">
-          <div class="card">
-              <div class="card-header">
-                  <h2>Est-ce que le site Web affiche les disponibilités du magasin de Mont Tremblant?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Non, le site ne permet pas de savoir si le produit est disponible à la boutique de Mont Tremblant. Pour savoir si un produit est disponible, contactez directement le magasin en appelant au 1 800 729-0322.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Pourquoi le rabais du membership ne s'affiche pas dans mon panier d'achat?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Afin de voir le rabais du membership, vous devez vous connecter à votre compte client. Une fois connecté à votre compte, le rabais s'appliquera sur le panier d'achats.</p>
-                  <p>Le rabais membre n’est pas applicable sur les achats faits sur la Place de marché.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Quels sont les prix en dollar américain?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Tous les prix affichés sur Altitude Sports sont en dollar canadien.</p>
-                  <p>Le montant en dollar américain dépendra de votre banque et du service de paiement utilisé. Par exemple, si vous payez par carte de crédit, le taux journalier de votre banque vous sera chargé, tandis que si vous utilisez le service de PayPal, le taux de change sera fixé par PayPal. Pour cette raison, nous ne pouvons vous dire quel est le prix exact d’un produit en devise américaine.</p>
-                  <p>Si vous nous retournez un article, nous vous rembourserons le montant que vous avez payé en dollars canadiens. Notez que dans certains rares cas, le montant que vous recevrez dans votre pays de provenance pourrait légèrement différer du montant remboursé en raison des différentes devises et du taux de change en vigueur au moment de traiter votre retour.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Où dois-je entrer mon code rabais?</h2>
-              </div>
-              <div class="card-body" id="faq_discountCode">
-                  <p>Sur la page «informations et paiement», vos items sont listés sur la droite au-dessus d’une boîte «carte cadeau ou code rabais». Inscrivez-y votre code et cliquez sur le bouton «appliquer» qui se trouve à droite. Vous verrez le rabais s’appliquer instantanément. Veuillez prendre note que vous ne pouvez utiliser plus d’un code rabais par commande.</p>
-                  <p>Veuillez noter que les codes rabais ne s’appliquent pas aux commandes faites sur la Place de marché.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header" id="headingFAQorders5">
-                  <h2>Pourquoi mon code rabais ne fonctionne-t-il pas?</h2>
-              </div>
-              <div class="card-body" id="faq_discountWork">
-                  <p>Il y a trois raisons qui expliquent pourquoi votre code rabais refuse de s’appliquer.</p>
-                  <p><strong>Premièrement,</strong> assurez-vous que la date d’expiration de votre code n’est pas passée.</p>
-                  <p><strong>Deuxièmement,</strong> assurez-vous que votre produit n’est pas exclu de la promotion et vérifiez que le montant de votre commande correspond au minimum requis pour l’application du code.</p>
-                  <p><strong>Troisièmement,</strong> il se peut que vous ayez omis d’entrer des informations.</p>
-                  <p><a href="/pages/coupons-discount-codes-rabais">Cliquez ici</a> pour consulter la liste des codes rabais en vigueur et pour en connaître les exclusions.</p>
-                  <p>Veuillez noter que les codes rabais ne s’appliquent pas sur les articles achetés auprès d’un vendeur de la <a href="#marketplace">Place de marché.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Puis-je appliquer plus d’un code rabais à la fois?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Non. Un seul code rabais par commande peut être utilisé.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Que sont les Alti Dollars et les crédits expirables?</h2>
-              </div>
-              <div class="card-body" id="faq_altidollars">
-                  <p>Les <strong>Alti Dollars</strong> sont notre propre devise. Chaque Alti Dollars équivaut à 1 dollar canadien et n’expire jamais. Les Alti Dollars sont délivrés lors d’un remboursement dû à un ajustement de prix (lien vers Politique de prix). Si vous retournez un produit, tous les Alti Dollars utilisés lors de l’achat seront automatiquement versés dans votre compte et pourront être utilisés lors du prochain achat.</p>
-                  <p>Les <strong>crédits expirables</strong> sont acquis lorsque vous faites une revue de l’un des produits que vous avez achetés. Soyez vigilants, car ces crédits ont une date d’expiration! Notez que vous pouvez les utiliser qu’une seule fois et qu’ils ne seront pas remboursés dans votre compte si vous retournez les produits achetés.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Comment puis-je utiliser mes crédits?</h2>
-              </div>
-              <div class="card-body" id="faq_storeCredit">
-                  <p>Pour utiliser vos crédits, assurez-vous de vous <a href="/account/login">connecter à votre compte</a> avant de compléter votre commande. Au moment de compléter votre commande, à l’étape du paiement, vous trouverez à votre droite « Vous avez X crédits temporaires » et/ou « Vous avez X Alti Dollars ». Cochez la case du ou des crédits que vous désirez appliquer. Vous remarquerez immédiatement que le total de votre panier s’est mis à jour.</p>
-                  <p>Si vous ne savez pas comment vous connecter à votre compte, contactez notre service à la clientèle au 1 855 585-6266 ou par courriel à <a href="mailto:info@altitude-sports.com">info@altitude-sports.com</a>.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Pourquoi ma carte cadeau ne fonctionne-t-elle pas?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Nous avons mis à jour notre site internet le 13 avril 2017. Si votre carte cadeau provient de notre ancien site, elle est toujours valide sur le nouveau.</p>
-                  <p>Au moment de régler votre commande, inscrivez simplement ALT au début de la série de chiffres.</p>
-                  <p>Par exemple: <em>mun8p3bco69u</em> deviendra <em>ALTmun8p3bco69u</em>.</p>
-                  <p>Veuillez noter que les cartes-cadeaux ne sont pas valides pour les achats provenant d’un vendeur de la <a href="#marketplace">Place de marché</a>.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Comment vérifier le statut de ma commande?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Vous pouvez vérifier le statut de votre commande en tout temps si vous l'avez passée à partir de votre compte. Si vous avez passé une commande en tant qu’invité, consultez votre boîte de courriels (pensez à vérifier vos courriels indésirables) pour y trouver le mot de passe servant à vous connecter à votre compte. Voici comment vérifier le statut de votre commande :</p>
-                  <ol>
-                      <li><a href="/account/login" target="_blank">Connectez-vous à votre compte</a></li>
-                      <li>Accédez à la section « Mes commandes / Remboursements »</li>
-                      <li>Repérez votre commande. Vous pouvez constater le statut de celle-ci dans la colonne correspondante</li>
-                  </ol>
-                  <p>Voici un petit lexique pour vous aider à comprendre la signification du statut de votre commande :</p>
-                  <ul>
-                      <li><em>Payé</em> : Cette commande a été payée en totalité</li>
-                      <li><em>Partiellement remboursé</em> : Cette commande comprend un ou plusieurs articles ayant été remboursés</li>
-                      <li><em>Remboursé</em> : Tous les articles de la commande ont été remboursés et la commande est considérée fermée</li>
-                      <li><em>Livré</em> : Cette commande a été ramassée, emballée et expédiée</li>
-                      <li><em>Non livré </em>: Cette commande n'a pas encore été expédiée.</li>
-                  </ul>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Pourquoi ma commande doit-elle passer à travers un processus de vérification?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Toutes les commandes sont sujettes à vérification. Cela nous garantit que les informations fournies sont justes. C’est aussi un moyen efficace de vous protéger contre les fraudeurs.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Pourquoi ma commande a-t-elle été annulée?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Nous travaillons très fort à protéger nos clients. Notre système annulera automatiquement une commande si les informations de facturation ne correspondent pas à notre processus de vérification. Si votre commande a été annulée, n’hésitez pas à contacter notre service à la clientèle au <strong>1 855 585-6266</strong> ou envoyez un courriel à <a href="mailto:info@altitude-sports.com"><strong>info@altitude-sports.com</strong></a> pour obtenir plus de détails à ce sujet.</p>
-                  <p>Veuillez noter que le vendeur de la <a href="#marketplace">Place de marché</a> peut annuler la commande si un article commandé n’est plus disponible.</p>
-              </div>
-          </div>
-          <!--<div class="card">
-              <div class="card-header">
-                  <h2>Quels sont les rabais pour les commandes de groupe?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Si vous commandez plus de 5 unités du même modèle, vous êtes admissible à un rabais pour les commandes de groupe. Ce dernier varie en fonction de plusieurs critères notamment la quantité, le type de produit, la marque et la période de l'année. Contactez un de nos conseillers au service à la clientèle qui se fera un plaisir de vous préparer une soumission.</p>
-                  <p><strong>Conditions particulières aux ventes de groupe</strong></p>
-                  <p>Le paiement se fait par carte de crédit au moment de la livraison ou par chèque, 10 jours ouvrables avant la livraison;</p>
-                  <p>Les commandes de groupes sont toutes finales, non remboursables et non échangeables;</p>
-                  <p>La personnalisation des produits peut affecter la garantie d'Altitude Sports ou celle du manufacturier. Contactez un de nos conseillers au service à la clientèle pour plus de détails à ce sujet.</p>
-              </div>
-          </div>-->
-          <div class="card">
-              <div class="card-header">
-                  <h2>Qu'est-ce que la Place de marché?</h2>
-              </div>
-              <div class="card-body">
-                  <p>La Place de marché Altitude Sports vous offre notre expérience de magasinage avec une plus grande sélection de produits provenant de vendeurs triés sur le volet.</p>
-              </div>
-          </div>
-          <!-- END FAQ orders -->
-          <!-- BEGIN FAQ shipping -->
-          <div class="card">
-              <div class="card-header">
-                  <h2>Comment puis-je savoir si ma commande de plus de 49 $ est éligible à la livraison standard gratuite au Canada?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Pour valider que votre futur achat se qualifie pour l'envoi gratuit à l'adresse souhaitée, vous n'avez qu'à ajouter le ou les produits souhaités dans votre panier d'achats. À la première étape de votre panier d'achats, vous pouvez obtenir une estimation des frais d'envoi pour l'ensemble des méthodes de livraison disponibles en entrant le pays, la province et le code postal d'envoi. Cliquez ensuite sur « Obtenir une estimation ». En quelques secondes, un menu nommé « Sélectionnez une méthode de livraison » déroulant apparaîtra sous ce bouton avec toutes les options disponibles, leur date d'arrivée et leur coût respectif. Vous pourrez ainsi voir si votre futur achat se qualifie pour la livraison standard gratuite avec FedEx et/ou Postes Canada.</p>
-                  <p>Si les méthodes standards présentent certains frais, cela est dû soit à l'adresse de livraison, à la dimension ou au poids exceptionnels de votre commande. Altitude Sports tente de minimiser ces surcharges au maximum en négociant les meilleurs taux avec les compagnies de livraison et en assumant quand même la majorité des frais d'envoi pour ce type de situation. Le Canada étant un pays très vaste, une limite doit toutefois être établie pour que ces activités commerciales demeurent viables à long terme. Nous vous remercions de votre compréhension.</p>
-                  <p>Veuillez noter que les retours gratuits ne s’appliquent pas sur les commandes provenant d’un vendeur de la <a href="#marketplace">Place de marché</a>.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Comment obtenir la date estimée de livraison de mon colis?</h2>
-              </div>
-              <div class="card-body" id="faq_estimatedDelivery">
-                  <p>Dans votre panier, cliquez sur « Passez à la caisse ». Remplissez les informations concernant votre adresse d'expédition. Plus bas, dans la section « Méthode de livraison », vous trouverez une estimation du temps de livraison pour chaque méthode.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Où puis-je obtenir le numéro de suivi de ma commande?</h2>
-              </div>
-              <div class="card-body" id="faq_getTracking">
-                  <p>Dès que votre commande sera expédiée, vous recevrez une confirmation par courriel. Sous la méthode d’expédition que vous avez sélectionnée, vous y retrouverez le nom du transporteur et votre numéro de repérage. Pour toutes questions, n’hésitez pas à contacter notre service à la clientèle par clavardage, courriel ou téléphone au 1 855 585-6266.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Quelles marques ne peuvent pas être expédiées à l’extérieur du Canada?</h2>
-              </div>
-              <div class="card-body">
-                  <p>En raison d’accords commerciaux avec nos fournisseurs, nous ne pouvons expédier certaines marques à l’extérieur du Canada. En magasinant vos produits, assurez-vous qu’ils peuvent être expédiés dans votre pays en vous référant aux icônes suivants :</p>
-                  <ul>
-                      <li><img src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/shipping-worldwide.png" alt="Worldwide" style="padding-right: 5px;" />Partout dans le monde</li>
-                      <li><img src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada-us.png" alt="Canada &amp; US only" style="padding-right: 5px;" />Canada et États-unis seulement</li>
-                      <li><img src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada.png" alt="Canada only" style="padding-right: 5px;" />Canada seulement</li>
-                  </ul>
-                  <p><i>N.B.</i> Altitude Sports ne peut expédier en Europe en raison de la réglementation GBPR.</p>
-                  <p>Ces icônes se trouvent sur chaque page de produit, sous le bouton « ajouter au panier ». Vous les retrouverez également dans votre panier d’achats, dans le récapitulatif de votre commande.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Combien coûte la livraison pour les États-Unis?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Des frais de livraison s’appliquent pour les livraisons des commandes de moins de 99 $ (avant taxes et frais de livraison) pour les États-Unis continentaux. La livraison pour les commandes de plus de 99 $ (avant taxes et frais de livraison) est gratuite pour les États-Unis continentaux. Des frais supplémentaires s’appliquent pour les commandes expédiées en Alaska, à Hawaï et à Porto Rico. Prévoyez de 2 à 5 jours ouvrables pour la livraison.</p>
-              </div>
-          </div>
-          <!-- END FAQ shipping -->
-          <!-- BEGIN FAQ accounts -->
-          <div class="card">
-              <div class="card-header">
-                  <h2>Pourquoi me demande-t-on un mot de passe si je n’ai jamais créé de compte?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Lorsque vous passez une commande sur Altitude Sports, un profil utilisateur est créé dans notre système. Vous recevrez un courriel vous invitant à activer votre compte. Nous vous conseillons fortement de le faire dès la réception du courriel pour faciliter l'accès à vos informations de compte et à votre historique de commande. Si vous avez besoin d'assistance, n'hésitez pas à contacter notre service à la clientèle.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Vous avez oublié votre mot de passe?</h2>
-              </div>
-              <div class="card-body">
-                  <p>Voici donc comment retrouver votre mot de passe en 3 étapes faciles :</p>
-                  <ol>
-                      <li><a href="/account/login">Cliquez sur ce lien</a>, puis cliquez sur « Mot de passe oublié? » Dans le champ « Adresse courriel », entrez l'adresse courriel que vous avez utilisée lors de votre dernier achat chez Altitude Sports. Cliquez ensuite sur « Soumettre ».</li>
-                      <li>Un courriel intitulé « Réinitialisez votre mot de passe » vous sera envoyé (pensez à vérifier vos indésirables). Ouvrez-le et lisez attentivement les instructions. Cliquez sur le lien fourni afin de poursuivre vers la prochaine étape du processus.</li>
-                      <li>Entrez maintenant votre nouveau mot de passe dans les deux champs correspondants. Le mot de passe que vous choisissez doit demeurer confidentiel. Nous vous conseillons d'utiliser des chiffres, des symboles, et des lettres minuscules et majuscules dans votre mot de passe afin de le rendre plus difficile à deviner ou à déchiffrer. Votre mot de passe doit contenir entre 6 et 15 caractères. Pour obtenir plus d’information sur la façon de créer un mot de passe sécuritaire, veuillez lire <a target="_blank" href="https://support.google.com/accounts/answer/9094506?hl=fr&visit_id=636746977446480924-1707608928&rd=1">cette page Google</a>. Cliquez ensuite sur le bouton « Réinitialiser ».</li>
-                      <li>Vous serez ensuite automatiquement redirigés à la page d’accueil de votre compte.</li>
-                  </ol>
-                  <p>Vous serez ensuite automatiquement redirigés à la page d’accueil de votre compte. Si vous rencontrez des difficultés dans ce processus, n'hésitez pas à contacter un de nos conseillers au service à la clientèle.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- CONTACT -->
-  <div class="content" id="contact">
-      <h2>Nous contacter</h2>
-      <div id="accordionContact" class="accordion">
-          <div>
-              <p>Vous avez une question ou un problème? Obtenez la réponse la plus rapide possible en remplissant ce formulaire :</p>
-              <p>
-                  <button style="border: 1px solid #000;" class="button _zdContactBtn" data-sendto="https://altitudesports.zendesk.com/hc/fr/requests/new">Cliquer ici</button>
-              </p>
-              <p>Si vous avez besoin d'un complément d'information ou de conseils, n'hésitez pas à contacter un de nos conseillers au service à la clientèle d'une des manières suivantes :</p>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Clavardage</h2>
-              </div>
-              <div class="card-body">
-                  <p>Pour faire une demande de clavardage avec nous, vous pouvez simplement cliquer sur l’icône dans le coin droit au bas de votre écran :</p>
-                  <p><img src="https://cdn.shopify.com/s/files/1/1230/9376/files/chat-capture-FR.png" /></p>
-                  <p>Des conseillers au service à la clientèle sont disponibles pour le clavardage du lundi au vendredi, de 9 h à 22 h, samedi, de 10 h à 18 h et dimanche, de 12 h à 22 h HE.</p>
-                  <p><em>* Veuillez noter que l'icône changera à « Aide » si notre service de clavardage n'est pas disponible. Cliquez sur celui-ci et utiliser le formulaire pour nous envoyer une demande.</em></p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Téléphone</h2>
-              </div>
-              <div class="card-body">
-                  <p>De la région de Montréal : 514 495-1111
-                      <br />D'ailleurs en Amérique du Nord : 1 855 585-6266
-                      <br />De l'extérieur de l'Amérique du Nord : 1 514 495-1111</p>
-                  <p>Des conseillers au service à la clientèle prennent les appels du lundi au vendredi, de 9 h à 22 h, le samedi de 10 h à 18 h et le dimanche de 12 h à 22 h.</p>
-                  <p>Prendre note que nos heures d’opérations sont basées sur l’heure de l’Est.</p>
-                  <p>Altitude Sports s'engage à vous rappeler dans un délai de 1 à 2 jours ouvrables maximum si vous laissez un message sur la boîte vocale.</p>
-                  <p>À l'occasion du Vendredi fou, du 19 au 26 novembre, nos conseillers seront disponibles de 9 h à 00 h 30 HE. Le retour aux heures régulières se fera dès le mardi 27 novembre.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Courriel</h2>
-              </div>
-              <div class="card-body">
-                  <p><a href="mailto:info@altitude-sports.com">info@altitude-sports.com</a></p>
-                  <p>Altitude Sports s'engage à vous donner une réponse à votre question dans un délai de 1 à 2 jours ouvrables maximum.</p>
-              </div>
-          </div>
-          <div class="card">
-              <div class="card-header">
-                  <h2>Notre magasin</h2>
-              </div>
-              <div class="card-body">
-                  <p>Pour rencontrer les conseillers d'Altitude Sports, visitez notre magasin à Mont-Tremblant, au Québec.</p>
-                  <h4 id="tremblant" style="margin: 0;">Altitude Sports Mont-Tremblant</h4>
-                  <p><a target="_blank" href="https://www.google.ca/maps/place/Altitude-sports.com/@46.117514,-74.582148,15z/data=!4m5!3m4!1s0x0:0xb8c41484579a53cc!8m2!3d46.1157283!4d-74.582168?hl=en">Factoreries Tremblant<br />2555, rue de l'Aulnaie, suite 203<br />Mont-Tremblant (Québec)  J8E 0E5</a></p>
-                  <p>Téléphone : 1 855 585-6266
-                      <br />Courriel : tremblant@altitude-sports.com
-                      <br />Juste à côté du Starbucks sur la route 117</p>
-                  <!--
-                        <div class="holiday">
-                            <h3>Horaire des fêtes :</h3>
-                            <p>
-                                <strong>Du 21 au 31 décembre :<br></strong>
-                                Lundi au mercredi, de 10 h à 21 h<br>
-                                Jeudi 24 et 31 décembre, de 10 h à 17 h<br>
-                                Samedi et dimanche, de 10 h à 17 h<br>
-                            </p>
-                            <p><strong>FERMÉ le 25 décembre et le 1er janvier</strong></p>
-                        </div>
-                    -->
-                  <h4>Heures d’ouverture :</h4>
-                  <ul style="list-style: none; padding: 0;">
-                    <li><span style="display:inline-block;width:7em">Lundi :</span> 10 h à 18 h</li>
-                    <li><span style="display:inline-block;width:7em">Mardi :</span> 10 h à 18 h</li>
-                    <li><span style="display:inline-block;width:7em">Mercredi :</span> 10 h à 18 h</li>
-                    <li><span style="display:inline-block;width:7em">Jeudi :</span> 12 h à 21 h</li>
-                    <li><span style="display:inline-block;width:7em">Vendredi :</span> 12 h à 21 h</li>
-                    <li><span style="display:inline-block;width:7em">Samedi :</span> 10 h à 17 h</li>
-                    <li><span style="display:inline-block;width:7em">Dimanche :</span> 10 h à 17 h</li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- END Contact -->
+	<!-- SHIPPING -->
+	<div class="content" id="shipping">
+		<h1>Livraison</h1>
+		<div class="faq-search">
+			<input type="text" placeholder="Rechercher dans Livraison" />
+		</div>
+		<div style="background-image: url(https://cdn.shopify.com/s/files/1/1230/9376/files/ss-banner-bg-dots.png);padding: 0 1em 1em;margin: 1.5em 0 2em;">
+			<p style="font-weight: 500;font-size: 1.5em;margin-top: 0.5em;">Recevez votre commande à temps pour Noël.</p>
+			<p>Consultez ci-dessous les dates limites de commande en fonction de la destination et de la méthode d’envoi. </p>
+			<p><strong>Xpresspost est GRATUIT sur les commandes de plus de 99$.</strong> Pour un temps limité, au Canada seulement. </p>
+			<p style="border: 1px solid rgba(0,0,0,0.1); padding: 1em; margin-right: 0.5em; background-color: #fff;line-height: 1.7em;">Nous suivons avec attention les retards de livraison de Postes Canada dus aux grèves tournantes ayant pris fin le 27 novembre. Les dates suivantes sont les <strong>dernières journées</strong> pour commander afin de recevoir votre colis à temps pour Noël. Les dates diffèrent selon de la destination de votre envoi et de la méthode de livraison choisie. Les <strong>dates limites</strong> de commandes ci-dessous prennent en compte nos délais de traitement, les délais de livraison standard de Postes Canada, ainsi que les retards maximum prévus et fournis par Postes Canada. Des mises à jour quotidiennes seront publiées sur cette page.</p>
+			<p style="font-weight: 500;font-size: 1.3em;margin-top: 0.5em;">Dates limites de commande selon la région d’envoi de votre colis et la méthode de livraison</p>
+			<p><i style="opacity: 0.55;white-space: nowrap;">(Dernière mise à jour : 7 décembre 2018)</i></p>
+			<div id="table-container">
+				<table id="shipping-holidays">
+					<thead style="vertical-align: bottom;">
+						<tr>
+							<th>Région</th>
+							<th>Xpresspost</th>
+							<th>Colis accélérés</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="3" style="border: none;padding: 1em 0 0.5em;"><strong>Grand Montréal, Toronto et Ottawa</strong></td>
+						</tr>
+						<tr>
+							<td>Grand Ottawa, Kingston, Belleville</td>
+							<td>17-Dec-18</td>
+							<td>13-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Grand Toronto (tous les codes postaux commençant par M)</td>
+							<td>13-Dec-18</td>
+							<td>11-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Guelph, Cambridge, London, Windsor, Owen Sound</td>
+							<td>17-Dec-18</td>
+							<td>13-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Longueuil, Gatineau</td>
+							<td>17-Dec-18</td>
+							<td>17-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Montréal, Laval (tous les codes postaux commençant par H)</td>
+							<td>17-Dec-18</td>
+							<td>17-Dec-18</td>
+						</tr>
+						<tr class="last-row">
+							<td>Le sud de l'Ontario (tous les codes postaux commençant par L)</td>
+							<td>17-Dec-18</td>
+							<td>12-Dec-18</td>
+						</tr>
+						<tr>
+							<td colspan="3" style="border: none;padding: 1em 0 0.5em;"><strong>Canada métropolitain</strong></td>
+						</tr>
+						<tr>
+							<td>Sud-Est de l'Ontario (tous les codes postaux commençant par K)</td>
+							<td>14-Dec-18</td>
+							<td>12-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Grand Calgary / Grand Edmonton</td>
+							<td>14-Dec-18</td>
+							<td>10-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Grand Charlottetown</td>
+							<td>14-Dec-18</td>
+							<td>10-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Grand Halifax</td>
+							<td>14-Dec-18</td>
+							<td>11-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Grand Québec, Trois-Rivières</td>
+							<td>14-Dec-18</td>
+							<td>12-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Grand Regina / Grand Saskatoon</td>
+							<td>14-Dec-18</td>
+							<td>11-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Grand Saint John / Moncton</td>
+							<td>14-Dec-18</td>
+							<td>11-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Grand St. John's</td>
+							<td>14-Dec-18</td>
+							<td>07-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Grand Vancouver / Grand Victoria</td>
+							<td>12-Dec-18</td>
+							<td>06-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Grand Winnipeg</td>
+							<td>14-Dec-18</td>
+							<td>11-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Sud-ouest de l'Ontario (tous les codes postaux commençant par N)</td>
+							<td>14-Dec-18</td>
+							<td>12-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Ouest de l’Ontario (tous les codes postaux commençant par P)</td>
+							<td>14-Dec-18</td>
+							<td>11-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Ouest du Québec (tous les codes postaux commençant par J)</td>
+							<td>14-Dec-18</td>
+							<td>12-Dec-18</td>
+						</tr>
+						<tr>
+							<td colspan="3" style="border: none;padding: 1em 0 0.5em;"><strong>Canada rural</strong></td>
+						</tr>
+						<tr>
+							<td>Alberta (tous les codes postaux commençant par T)</td>
+							<td>13-Dec-18</td>
+							<td>07-Dec-18</td>
+						</tr>
+						<tr>
+							<td>British Columbia (tous les codes postaux commençant par V)</td>
+							<td>13-Dec-18</td>
+							<td>07-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Est du Québec (tous les codes postaux commençant par G)</td>
+							<td>13-Dec-18</td>
+							<td>11-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Iqaluit (tous les codes postaux commençant par X0A0A1, X0A0H0 and X0A1H0)</td>
+							<td>12-Dec-18</td>
+							<td>12-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Manitoba (tous les codes postaux commençant par R)</td>
+							<td>13-Dec-18</td>
+							<td>10-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Nouveau-Brunswick (tous les codes postaux commençant par E)</td>
+							<td>13-Dec-18</td>
+							<td>10-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Terre-Neuve (tous les codes postaux commençant par A)</td>
+							<td>13-Dec-18</td>
+							<td>06-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Nouvelle-Écosse (tous les codes postaux commençant par B)</td>
+							<td>13-Dec-18</td>
+							<td>10-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Île-du-Prince-Édouard (tous les codes postaux commençant par C)</td>
+							<td>13-Dec-18</td>
+							<td>07-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Saskatchewan (tous les codes postaux commençant par S)</td>
+							<td>13-Dec-18</td>
+							<td>10-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Whitehorse (tous les codes postaux commençant par Y1A)</td>
+							<td>13-Dec-18</td>
+							<td>05-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Yellowknife (tous les codes postaux commençant par X1A)</td>
+							<td>13-Dec-18</td>
+							<td>06-Dec-18</td>
+						</tr>
+						<tr>
+							<td>Yukon / Nunavut / NWT</td>
+							<td>07-Dec-18</td>
+							<td>27-Nov-18</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div id="accordionShipping" class="accordion">
+			<div class="card">
+				<div class="card-header">
+					<h2>Livraison gratuite au Canada pour toutes commandes de 49 $ et plus</h2>
+				</div>
+				<div class="card-body">
+					<p>Chez Altitude Sports, la livraison standard avec Postes Canada est offerte gratuitement à l’intérieur du Canada avec toute commande de 49$ et plus, avant taxe et après rabais applicables.</p>
+					<p>Des surcharges peuvent s'appliquer pour certains envois exceptionnels de par leur dimension, leur poids ou l'éloignement de l'adresse de livraison. Vous pouvez facilement vérifier si votre commande est admissible à la  livraison standard lorsque vous magasinez sur notre site.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Délais de traitement de commande</h2>
+				</div>
+				<div class="card-body">
+					<p>Lorsque vous passez une commande sur le site, les délais de traitement varient en fonction du moment du moment où vous faites la commande. L'équipe d'Altitude Sports traite les commandes du lundi au vendredi, entre 9 h et 17 h (HNE). Si vous avez passé une commande le vendredi soir, celle-ci sera traitée le lundi suivant. Les délais de traitement sont calculés dans les temps de livraison mentionnés ci-haut au moment de choisir votre méthode d’envoi.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Délais de livraison</h2>
+				</div>
+				<div class="card-body" id="estimatedDelivery">
+					<p>Vous obtenez le délai de livraison prévu au moment de choisir la méthode et la compagnie de livraison, dès la première étape lorsque vous complétez votre panier d'achats. L'information sur les délais de livraison est fournie par les compagnies de livraison. Ces délais tiennent compte du temps de traitement de votre commande. Notez que les jours ouvrables et les fins de semaine ne sont pas comptés dans le délai de livraison estimé. Au Canada, Altitude Sports s'engage à vous livrer votre colis dans les délais indiqués. Veuillez noter qu'il se peut que votre colis arrive avant le délai prévu par la compagnie de livraison.</p>
+					<p>Pour une livraison au Canada, si le colis arrive après le délai indiqué sur Altitude Sports, établie par la compagnie de livraison au moment ou vous avez passé votre commande, Altitude Sports s'engage à rembourser les frais de livraison payés par le client. Des retards causés par des circonstances hors de notre contrôle peuvent subvenir. Altitude Sports ne se porte pas responsable des retards causés par ce type d'événement.</p>
+					<p>Pour les livraisons aux États-Unis ou ailleurs dans le monde, le délai prévu constitue une estimation, mais ne peut être garantie par Altitude Sports. La sous-traitance à des compagnies de postes locales et les délais de traitement des douanes peuvent rallonger les délais prévus. Pour plus d’information à ce sujet, veuillez consulter <a href="#shipping_13">la sous-section.</a></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Cueillette en magasin : une autre option pratique et gratuite</h2>
+				</div>
+				<div class="card-body">
+					<p>Si vous habitez la région de Mont-Tremblant, vous pouvez aussi venir chercher vos achats dans notre magasin, sans frais de livraison. Il suffit de sélectionner l'option gratuite de « Cueillette en magasin » dans le choix de vos méthodes de livraison du panier d'achats. Veuillez prévoir un délai de 7 à 8 jours ouvrables pour cette option de ramassage. Ce délai s'explique par le fait que les transferts entre l'entrepôt de Montréal et la boutique sont faits une fois par semaine. Les clients sont contactés par téléphone dès que leur colis arrive en magasin. Veuillez noter que par mesure de sécurité, Altitude Sports exige une copie de votre facture, votre carte de crédit et deux cartes d'identité lorsque vous venez chercher votre commande en magasin. Vous devrez aussi signer un document attestant que vous avez récupéré votre colis.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Frais de livraison</h2>
+				</div>
+				<div class="card-body">
+					<p>Vous connaîtrez le montant des frais de livraison une fois la compagnie de livraison choisie, à la première étape de votre panier d'achats.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Réception et récupération</h2>
+				</div>
+				<div class="card-body">
+					<p>Pour toutes les livraisons effectuées par FedEx, nous exigeons une signature de confirmation de réception par le client lui-même. Cela protège le client et Altitude Sports de possibles vols ou de conflits en cas d’erreur de livraison.</p>
+					<p>Bien que les dates de livraison soient respectées dans la grande majorité des cas, il est conseillé de prévoir un délai tampon de 3 jours ouvrables entre le moment de réception et le moment où vous comptez utiliser vos nouveaux achats. De cette manière, si le facteur se présente à votre adresse et que vous n'êtes pas là, vous aurez assez de temps pour passer chercher votre colis au bureau de poste dans les jours suivants. Aussi, si un désastre naturel, une grève des postes ou tout autre événement hors du contrôle d'Altitude Sports devaient retarder la livraison de votre colis, ces 3 jours ouvrables pourraient faire la différence entre partir en voyage dans avec ou sans votre nouveau sac à dos.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Annulation de commande</h2>
+				</div>
+				<div class="card-body">
+					<p>Si vous désirez annuler une commande, veuillez contacter notre service à la clientèle le plus rapidement possible au 1-855-585-6266 ou par clavardage pour que nous 
+					<p>vérifions l’état de votre commande. Si cette dernière est toujours en traitement, nous pourrons l’annuler.</p>
+					Si vous devez nous contacter en dehors de nos heures d’ouvertures, veuillez nous écrire à <a href="mailto:info@altitude-sports.com">info@altitude-sports.com</a> et indiquer dans le titre du courriel : « ANNULATION DE LA COMMANDE #0012345 ».</p>
+					<p>Veuillez noter que nous expédions la majorité de nos commandes en 24 heures. Si la commande est déjà expédiée, nous ne pouvons malheureusement pas l’annuler.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Où faire livrer votre colis?</h2>
+				</div>
+				<div class="card-body">
+					<p>Les compagnies de livraison utilisées par Altitude Sports livrent la plupart du temps le jour, entre 9 h et 18 h. Altitude Sports suggère de faire livrer votre colis à l'endroit où vous passez le plus de votre temps durant la journée. Vous mettez ainsi les chances de votre côté de recevoir votre colis directement, sans avoir à aller le chercher à un comptoir postal.</p>
+					<p>Les clients doivent s'appliquer à fournir l'adresse de livraison exacte et complète afin d'éviter des frais de retour dans le cas où la compagnie de livraison ne serait pas en mesure de remettre le colis à l’adresse indiquée.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Refus de livraison, non-réclamation d’un colis ou livraison à la mauvaise adresse</h2>
+				</div>
+				<div class="card-body">
+					<p>Si vous refusez de prendre possession de votre colis lors de la livraison, celui-ci est retourné à notre entrepôt de Montréal. Les frais de livraisons pour ce retour sont assumés par Altitude Sports. Il en est de même pour les paquets non réclamés après une ou plusieurs tentatives de livraison à votre domicile et après un certain nombre de jours en attente au comptoir postal. Ces paramètres varient selon la compagnie de livraison sélectionnée. Voici le lien vers les pages explicatives <a href="http://www.canadapost.ca/cpo/mc/personal/support/helpcentre/tracking/attempted_delivery.jsf?LOCALE=fr">Postes Canada</a> et <a href="http://http://www.fedex.com/">FedEx</a> à ce sujet. Les colis livrés à une mauvaise adresse par le client ou dont l'adresse est incomplète sont aussi retournés chez Altitude Sports.</p>
+					<p>Mis à part le refus d'un paquet parce qu'il a été endommagé dans le transport ou une erreur d'adresse qui n'a pas été causée par le client, Altitude Sports ne se porte pas responsable des frais postaux, droits de douane et autres taxes relatives au retour d'un envoi vers son entrepôt.</p>
+					<p>Si nous refusons le retour de vos items ou que vous avez fourni une adresse de livraison erronée et que nous devons vous réexpédier votre commande, des frais de 25 $ seront imposés à nos clients canadiens pour couvrir les frais de réexpédition. Pour les clients provenant des États-Unis, le coût est de 40 $. Pour les commandes internationales, le coût de réexpédition est de 75 $. Nous vous contacterons advenant que votre colis nous soit retourné. Si après 10 jours ouvrables, nous sommes sans nouvelles de votre part, nous vous rembourserons votre commande, en soustrayant les frais d’expédition.</p>
+					<p>Si votre commande nous revient en « Retour à l’expéditeur » et que vous ne désirez plus vous faire réexpédier cette dernière et préférez un remboursement, nous déduirons 15$ de votre remboursement pour couvrir les frais de retour de commandes au Canada. Pour les commandes nous revenant des États-Unis et autres pays à l’International, le service à la clientèle vous contactera pour plus de détails.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Suivi de votre commande</h2>
+				</div>
+				<div class="card-body">
+					<p>Altitude Sports vous permet de suivre les étapes de traitement et de livraison de votre commande si vous l'avez passée avec votre compte client. Vous pouvez vérifier le statut de votre commande en vous <a target="_blank" href="/account/login">connectant à votre compte</a> et en suivant les étapes mentionnées ci-bas. Si vous avez passé votre commande en tant qu'invité (sans créer de compte client), vous pouvez suivre l'évolution de votre commande uniquement via votre boîte de réception de courriels.</p>
+					<p>Vous savez déjà comment consulter l'état de votre commande?</p>
+					<p><a href="/account/login">Connectez-vous à votre compte maintenant.</a></p>
+					<p>Dès que vous passez votre commande, vous recevez un courriel de confirmation avec votre numéro de commande. Une fois votre colis emballé et prêt à être ramassé par la compagnie de livraison, vous recevrez un courriel avec votre facture. Vous recevrez aussi un courriel avec le numéro de suivi et les liens nécessaires pour suivre l'évolution de la livraison. Altitude Sports recommande d'ajouter info@altitude-sports.com à votre carnet d'adresses afin que les courriels de suivi n'aboutissent pas dans vos courriels indésirables.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Compagnies de livraison</h2>
+				</div>
+				<div class="card-body">
+					<p>Altitude Sports fait confiance à Postes Canada et à FedEx pour livrer vos commandes. Nous croyons que ces compagnies proposent l’offre la plus complète et le service le plus rapide pour nos clients et pour nous.</p>
+					<p>Pour savoir quelle méthode de livraison vous convient le mieux, veuillez suivre les instructions suivantes:</p>
+					<p>Une fois rendu à la caisse dans la section Livraison, vous pourrez sélectionner la compagnie de livraison de votre choix tout en voyant les différents coûts d’envoi.</p>
+					<p>Veuillez noter que seul Postes Canada peut livrer dans une boîte postale.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Livraison au Canada</h2>
+				</div>
+				<div class="card-body">
+					<p>Pour les livraisons au Canada, les taxes de vente facturées dépendent de la destination de la commande, c'est-à-dire l'endroit où la commande est livrée, et pas de l’adresse de facturation. <a href="#taxes">Cliquez-ici pour en savoir plus.</a></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Livraison à l'extérieur du Canada</h2>
+				</div>
+				<div class="card-body">
+					<p>Des droits de douane et taxes d’importation pourraient être chargés par le pays de destination. Ces frais supplémentaires sont la responsabilité de l’acheteur. Altitude Sports n’a aucun contrôle sur ces frais, et ne peut en estimer le montant. Pour en savoir davantage, veuillez vous référer aux services frontaliers du pays de destination.</p>
+					<p><strong>Toutes les commandes livrées à l'extérieur du Canada et des États-Unis sont expédiées par FedEx.</strong></p>
+					<p class="subtitle">États-Unis</p>
+					<p>Veuillez noter qu'à cause d'accords commerciaux avec quelques fabricants, Altitude Sports ne peut livrer certaines marques de produits aux États-Unis. Vous pouvez vérifier si un produit est disponible pour la livraison aux États-Unis, en repérer l'un des icônes suivants dans la page produit ou à côté de la description du produit dans votre panier d'achats :</p>
+					<ul>
+						<li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/shipping-worldwide.png" style="float: none;" /> Le produit peut être livré partout dans le monde</li>
+						<li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada-us.png" style="float: none;" /> Le produit peut être livré au Canada et aux États-Unis seulement</li>
+						<li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada.png" style="float: none;" /> Le produit peut être livré au Canada seulement</li>
+					</ul>
+					<p>Toutes les commandes livrées aux États-Unis sont expédiées par Postes Canada. Les commandes ne sont pas assujetties aux taxes canadiennes. Puisque les colis passent par les douanes, ils sont assujettis aux droits de douane à l'importation, aux taxes américaines et aux frais d'administration douanière. Dans la plupart des cas, une facture douanière payable au moment de la livraison accompagnera votre colis ou suivra par courrier. Les destinataires sont responsables et tenus d'acquitter ces frais, droits et taxes additionnels. Veuillez noter qu'Altitude Sports n'est pas en mesure de fournir des estimations quant aux droits de douane. Il est recommandé de s'informer au bureau des douanes le plus près avant de passer votre commande en ligne.</p>
+					<p>Des restrictions peuvent aussi s'appliquer sur la livraison de produits dangereux ou hors-normes. Altitude Sports se réserve le droit de refuser la livraison de certains de ces produits à l'extérieur du Canada en tout temps, et ce, sans préavis.</p>
+					<p class="subtitle">Ailleurs dans le monde</p>
+					<p>Veuillez noter qu'à cause d'accords commerciaux avec quelques fabricants, Altitude Sports ne peut livrer certaines marques de produits à l'extérieur du Canada et des États-Unis.</p>
+					<p>Vous pouvez vérifier si un produit est disponible pour la livraison à l'extérieur du Canada et des États-Unis, en repérant l'icône suivant dans la page produit ou à côté de la description du produit dans votre panier d'achats :</p>
+					<ul>
+						<li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/shipping-worldwide.png" style="float: none;" /> Le produit peut être livré partout dans le monde</li>
+					</ul>
+					<p>Les icônes suivants signifient que le produit en question peut seulement être livré au Canada et/ou aux États-Unis :</p>
+					<ul>
+						<li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada-us.png" style="float: none;" /> Le produit peut être livré au Canada et aux États-Unis seulement</li>
+						<li style="text-align: left;"><img alt="" src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada.png" style="float: none;" /> Le produit peut être livré au Canada seulement</li>
+					</ul>
+					<p>Veuillez noter que les produits Nobis peuvent être livrés partout dans le monde sauf en Corée du Sud et en Europe.</p>
+					<p>Si par mégarde, vous passez votre commande pour plusieurs produits et qu'un d'eux ne peut être livré à l'adresse fournie, Altitude Sports ajustera votre commande de manière à enlever le produit en question et livrera le reste de celle-ci.</p>
+					<p>Toutes les commandes livrées à l'extérieur du Canada et des États-Unis sont expédiées par FedEx. Les commandes ne sont pas assujetties aux taxes canadiennes. Puisque les colis passent par les douanes, ils sont assujettis aux droits de douane à l'importation, aux taxes du pays où le colis est livré et aux frais d'administration douanière. Dans la plupart des cas, une facture douanière payable au moment de la livraison accompagnera votre colis ou suivra par courrier. Les destinataires sont responsables et tenus d'acquitter ces frais, droits et taxes additionnels. Veuillez noter qu'Altitude Sports n'est pas en mesure de fournir des estimations quant aux droits de douane. Il est recommandé de s'informer au bureau des douanes le plus près avant de passer votre commande en ligne.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Frais de livraison pour les États-Unis</h2>
+				</div>
+				<div class="card-body">
+					<p>Des frais de livraison s’appliquent pour les commandes de moins de 99 $ (avant taxes et frais de livraison) pour les États-Unis continentaux. La livraison pour les commandes de plus de 99 $ (avant taxes et frais de livraison) est gratuite pour les États-Unis continentaux. Prévoyez de 2 à 5 jours ouvrables pour la livraison.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Livraison en Europe</h2>
+				</div>
+				<div class="card-body">
+					<p>Altitude Sports ne peut livrer en Europe en raison du RGPD.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Restrictions pour produits dangereux ou hors-normes</h2>
+				</div>
+				<div class="card-body">
+					<p>Des restrictions peuvent aussi s'appliquer sur la livraison de produits dangereux ou hors-normes. Altitude Sports se réserve le droit de refuser la livraison de certains de ces produits à l'extérieur du Canada en tout temps, et ce, sans préavis.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Commandes de la Place de marché</h2>
+				</div>
+				<div class="card-body">
+					<p>Pour les articles provenant des vendeurs de la Place de marché (voir la page du vendeur <a href="/pages/marketplace-osprey"><u>Osprey</u></a>), Altitude Sports n’est pas responsable de la livraison ou de l’expédition.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- RETURNS -->
+	<div class="content" id="returns">
+		<h1>Retours</h1>
+		<div class="faq-search">
+			<input type="text" placeholder="Rechercher dans Retours" />
+		</div>
+		<div id="accordionReturns" class="accordion">
+			<!-- FREE RETURN -->
+			<!--<div class="row no-gutters my-4" style="background: #a6dbd3;">
+				<div class="d-none d-md-block col-4" style="background: url('https://cdn.shopify.com/s/files/1/1199/9020/files/bg-free-returns') top right no-repeat; background-size: cover;"></div>
+				<div class="col-12 col-md-8 pt-3 px-3"><span class="h3 text-white" style="line-height: 1.2;"><span class="h3 text-white" style="line-height: 1.2;">Nouveau client? Profitez du retour gratuit sur votre première commande<span></span></span>
+				    </span>
+				    <p>Pour vous simplifier la vie, nous offrons le retour gratuit sur votre toute première commande. Commandez n’importe quel produit, dans les couleurs et grandeurs de votre choix, et retournez à nos frais les articles que vous ne désirez pas conserver. S’applique sur les commandes livrées au Canada seulement. Non applicable pour les articles provenant des vendeurs de la Place de marché. Un seul bordereau de retour fourni.</p>
+				</div>
+				</div>-->
+			<!-- END FREE RETURN -->
+			<div class="mt-4">
+				<div class="row mx-0 easy-return">
+					<div class="col-12 mt-2 pt-3 px-3">
+						<h2 class="h1"><strong>Retours simples et rapides</strong></h2>
+						<span class="h3">incluant les articles en solde</span>
+						<p class="description">Pour gagner du temps, nous vous offrons la possibilité d’essayer différentes tailles ou couleurs d’un produit et de nous les retourner dans les 90 jours suivant l’achat. Nous avons inclus une étiquette de retour pré remplie à l’intérieur de votre colis afin que vous n’ayez pas à imprimer et à remplir un formulaire de retour. Remballez simplement le produit que vous désirez nous retourner, collez l’étiquette sur le paquet et déposez-le à un bureau Poste Canada près de chez vous.</p>
+					</div>
+				</div>
+				<!-- RETURN STEPS -->
+				<div class="row mx-0 easy-return">
+					<div class="col-12 col-lg-4 py-2"><img class="d-inline-block align-middle" src="https://cdn.shopify.com/s/files/1/1230/9376/files/easy-return-1.png" width="100px" height="100px" /> <span class="h4 d-inline-block align-middle pl-2">Politique de retour de 90 jours</span></div>
+					<div class="col-12 col-lg-4 py-2"><img class="d-inline-block align-middle" src="https://cdn.shopify.com/s/files/1/1230/9376/files/easy-return-2.png" width="100px" height="100px" /> <span class="h4 d-inline-block align-middle pl-2">Étiquette de retour incluse dans le colis</span></div>
+					<div class="col-12 col-lg-4 py-2"><img class="d-inline-block align-middle" src="https://cdn.shopify.com/s/files/1/1230/9376/files/easy-return-2.png" width="100px" height="100px" /> <span class="h4 d-inline-block align-middle pl-2">Déposez le colis à votre bureau Postes Canada local</span></div>
+				</div>
+				<div class="row mx-0 easy-return">
+					<div class="col-12 p-3">
+						<p>Nous allons déduire 13 $ plus les taxes du montant de votre remboursement pour couvrir les frais de retour. Vous pouvez également <a href="/products/membership">devenir membre à vie</a> afin de bénéficier des retours gratuits*.</p>
+						<p><a href="#first-time">Nouveau client? Profitez du retour gratuit sur votre première commande*</a></p>
+						<p><i>* non applicable pour les articles provenant des vendeurs de la <a href="#marketplace">Place de marché.</a></i></p>
+					</div>
+				</div>
+			</div>
+			<div class="border-bottom border-dark pb-2">
+				<div class="row mx-0 ">
+					<div class="col-12"><span class="h2 pt-4 pb-3">Retournez un article en 4 étapes faciles</span></div>
+				</div>
+				<ol class="return-steps list-group-item row mx-0 border-0">
+					<li class="col-12 col-md-6">
+						<span class="h3 d-inline">Localisez l’étiquette de retour :</span>
+						<p>Vérifiez l’emballage ou le courriel de confirmation de votre commande pour savoir qui a reçu et livré votre commande, à savoir : Altitude Sports ou un vendeur de la Place de marché. Retirez l’étiquette de retour pré remplie incluse dans votre sac ou votre boîte de livraison.</p>
+					</li>
+					<li class="col-12 col-md-6">
+						<span class="h3 d-inline">Remballez votre colis :</span>
+						<p>Placez les produits que vous désirez retourner dans la boîte ou le sac de livraison et scellez-le.</p>
+					</li>
+					<li class="col-12 col-md-6">
+						<span class="h3 d-inline">Appliquez l’étiquette de livraison :</span>
+						<p>Couvrez l’étiquette de livraison initiale sur le paquet scellé en collant l’étiquette de retour sur l’étiquette de livraison originale.</p>
+					</li>
+					<li class="col-12 col-md-6">
+						<span class="h3 d-inline">Expédiez le colis contenant les articles à retourner :</span>
+						<ul class="mx-0 my-3" style="list-style-type: disc;">
+							<li>Si l’article a été vendu et expédié par Altitude Sports, l’article doit être renvoyé à Altitude Sports.</li>
+							<li>Si l’article a été vendu et expédié par un vendeur de la Place de marché, l’article doit être renvoyé au vendeur.</li>
+							<li>Déposez le colis à votre bureau Poste Canada local, ou à une succursale de la compagnie de livraison qui a été utilisée pour l’envoi de votre colis.</li>
+						</ul>
+					</li>
+				</ol>
+				<p class="smaller mb-4">Informations concernant les retours internationaux, <a href="#international-usa-returns">cliquez ici.</a></p>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Nouveau client? Profitez du retour gratuit sur votre première commande</h2>
+				</div>
+				<div class="card-body" id="first-time">
+					<p>Pour vous simplifier la vie, nous offrons le retour gratuit sur votre toute première commande. Commandez n’importe quel produit, dans les couleurs et grandeurs de votre choix, et retournez à nos frais les articles que vous ne désirez pas conserver. S’applique sur les commandes livrées au Canada seulement. Non applicable pour les articles provenant des vendeurs de la Place de marché. Un seul bordereau de retour fourni.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Politique de retour de 90 jours</h2>
+				</div>
+				<div class="card-body">
+					<p>Nous faisons tout notre possible pour que vous soyez entièrement satisfait des commandes que vous passez sur Altitude Sports. Pour nous en assurer, nous acceptons les retours dans un délai de 90 jours suivant la réception de votre commande.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Les produits doivent être en parfaite condition</h2>
+				</div>
+				<div class="card-body">
+					<p>Tous les produits doivent être retournés à Altitude Sports en parfaite condition. Cela signifie que le produit devra répondre aux conditions suivantes :</p>
+					<ul>
+						<li>Avoir toutes les étiquettes et tous les autocollants d’origine</li>
+						<li>Être dans son emballage d’origine accompagné du cintre d’origine (le cas échéant)</li>
+						<li>Être aussi propre que lorsqu’il vous a été expédié et ne pas être accompagné d’odeurs inhabituelles ou de poils d’animaux/cheveux</li>
+						<li>Avoir été essayé par-dessus vos sous-vêtements pour des raisons d’hygiène (particulièrement pour les maillots de bain et les sous-vêtements)</li>
+					</ul>
+					<p>Veuillez noter que tous les produits sont rigoureusement inspectés dès leur réception.</p>
+					<p>Altitude Sports se réserve le droit de refuser un retour qui ne respecte pas ces conditions et de le retourner à l’acheteur aux frais de ce dernier. Dans certains cas, des frais de réapprovisionnement pourraient s’appliquer.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Nous remboursons; mais ne faisons pas d’échanges</h2>
+				</div>
+				<div class="card-body">
+					<p>Notre expérience démontre qu’il est plus avantageux pour tout le monde de ne pas offrir d’échanges parce qu’il est plus simple de vous rembourser un produit au moment du retour. Il est plus rapide et facile de considérer chaque transaction séparément, et de cette façon, vous n’aurez pas à attendre jusqu’à ce que le retour soit complété avant de commander le bon produit. Si vous préfériez une couleur ou une taille différente, simplement commandez le style voulu et retournez-nous le produit non désiré dès que possible. Le fait de passer cette seconde commande élimine le besoin d’attendre que le remboursement soit effectué, et permet d’assurer que le bon produit vous soit livré le plus tôt possible.</p>
+					<p><strong>Exemple :</strong> si vous souhaitez échanger un manteau de taille S parce que vous pensez que la taille M vous ferait mieux, vous n’avez que deux choses à faire. Premièrement, retournez le manteau de taille S. Vous serez remboursé lorsque le processus sera complété. Deuxièmement, commandez le manteau en taille M, il vous sera livré selon le processus de livraison habituel.</p>
+					<p><strong>Conseil : Commandez plusieurs tailles, couleurs, ou styles du même produit.</strong></p>
+					<p>Si vous hésitez parmi plusieurs tailles, couleurs, ou modèles, nous vous recommandons de commander plusieurs produits afin que vous puissiez les comparer et nous renvoyer les produits que vous n’aimez pas. Cette commande unique limitera le nombre de transactions et vous fera gagner du temps, tout en s’assurant que vous obteniez le produit dont vous voulez. Cela garantit également que vous puissiez avoir l’article avant qu’il ne soit épuisé.</p>
+					<p>Altitude Sports possède plusieurs marques et modèles, mais certains produits sont limités en couleur ou en quantité. Pendant nos soldes, certains styles s’écoulent très rapidement.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Retourner des produits achetés en solde</h2>
+				</div>
+				<div class="card-body">
+					<p>Si vous avez acheté un produit en solde, vous pouvez le retourner.</p>
+					<p>Si vous désirez acheter le même produit (même couleur et année de fabrication) dans une autre taille, mais que le produit n’est plus en solde, nous égalerons le prix initial. Veuillez contacter <a href="#contact">le service à la clientèle</a> avant de passer la seconde commande.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Produits non retournables</h2>
+				</div>
+				<div class="card-body">
+					<p>Nous acceptons le retour de la plupart des produits que nous vendons, incluant ceux à rabais. En raison de la nature de certains produits et notre incapacité de garantir qu’ils seront parfaitement neufs, sécuritaires, et hygiéniques pour le prochain client, certains produits spécifiques sont non retournables. Les mousquetons, les poussettes, et les sacs gonflables pour avalanches sont non retournables.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Retour des produits défectueux, endommagés, ou incorrects</h2>
+				</div>
+				<div class="card-body">
+					<p>Il incombe au client de vérifier la condition du produit lorsqu’il le reçoit. Dans de rares cas, les produits peuvent s’endommager lors du transport, être défectueux en arrivant, ou nous aurions pu envoyer le mauvais produit par mégarde. Si tel est le cas, il est important que vous contactiez le service à la clientèle dans un délai de 7 jours afin de nous informer des détails. Des dispositions seront prises pour que le client puisse retourner le produit défectueux, incorrect ou endommagé gratuitement et nous lui attribuerons un remboursement intégral.</p>
+					<p>Pour de plus amples informations concernant un produit sous garantie, veuillez vous référer à <a href="#warranty">notre page Garantie</a>.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Retour de produits achetés avec des Alti Dollars ou des Crédits Expirables</h2>
+				</div>
+				<div class="card-body">
+					<p>Si vous avez acheté un produit avec des Alti Dollars et que vous voulez retourner ce produit, les Alti Dollars seront reversés dans votre compte au moment où le remboursement sera traité. Si vous achetez un produit combinant des Alti Dollars et une autre méthode de paiement, nous vous rembourserons à partir des mêmes méthodes de paiement utilisées au moment de l’achat.</p>
+					<p>Si vous avez acheté un produit avec des Crédits Expirables et que vous retournez ce produit, les Crédits Expirables ne seront pas remboursés dans votre compte. Les Crédits Expirables sont à usage unique, nous vous suggérons donc de les utiliser pour des achats que vous serez certain de conserver.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Délais de retour</h2>
+				</div>
+				<div class="card-body">
+					<p>Les retours sont traités du lundi au vendredi. Ce n’est qu’après avoir accusé réception du colis et vérifié que le contenu est en parfaite condition que nous pouvons commencer le processus de retour. Durant les périodes de pointe et les promotions — notamment du 1er décembre au 15 février — le processus de retour peut prendre jusqu’à 5 jours ouvrables.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Retourner un produit sans notre bordereau de retour</h2>
+				</div>
+				<div class="card-body">
+					<p>Si vous décidez de ne pas utiliser le bordereau de retour joint à votre colis, vous pouvez retourner votre commande en rapportant votre colis à un point de service du transporteur de votre choix. Veuillez noter qu’Altitude Sports n’accepte les retours que s’ils proviennent de transporteurs, tels que Poste Canada, FedEx, et UPS.</p>
+					<p>Toutes les commandes que vous souhaitez retourner doivent être envoyées par la poste à notre entrepôt. Pour des raisons de logistiques, notre entrepôt n’est pas ouvert au public.</p>
+					<strong>Adresse de retour : </strong>
+					<p>Altitude Sports
+						<br />Département des retours
+						<br />333, rue Chabanel O, suite 705
+						<br />Montreal (Québec) H2N 2E7
+						<br />Canada
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Retours à notre boutique de Mont-Tremblant</h2>
+				</div>
+				<div class="card-body">
+					<p>Vous pouvez retourner les produits de votre choix, sans frais, en les rapportant à notre boutique.</p>
+					<strong>Adresse de la boutique :</strong>
+					<p>Altitude Sports Mont-Tremblant
+						<br />2555 rue de L'Aulnaie
+						<br />Mont-Tremblant (Québec) J8E 0E5
+						<br />Canada
+					</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Retours internationaux incluant les États-Unis</h2>
+				</div>
+				<div class="card-body" id="international-usa-returns">
+					<p>Les frais de retours de 13 $ ainsi que les retours gratuits pour nos membres s’appliquent uniquement aux commandes envoyées au Canada. Si vous souhaitez retourner un article et que vous êtes situé aux États-Unis ou ailleurs qu’au Canada, veuillez contacter <a href="#contact">le service à la clientèle d’Altitude Sports</a>. L’un de nos conseillers se fera un plaisir de vous guider à travers toutes les étapes du processus de retour et pourra vous donner une estimation des frais de retour.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Conditions de retour de la Place de marché</h2>
+				</div>
+				<div class="card-body" id="marketplace-return">
+					<p>Pour retourner un article :</p>
+					<ul>
+						<li>Si l’article a été vendu et expédié par Altitude Sports, l’article doit être renvoyé à Altitude Sports.</li>
+						<li>Si l’article a été vendu et expédié par un vendeur de la Place de marché, l’article doit être renvoyé au vendeur.</li>
+					</ul>
+					<p>Déposez le colis à votre bureau Poste Canada local, ou à une succursale de la compagnie de livraison qui a été utilisée pour l’envoi de votre colis. Veuillez prendre note qu’un frais de retour de 13$ s’applique à toutes les commandes passées sur la Place de marché.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- PRICE POLICY -->
+	<div class="content" id="price">
+		<h1>Politique de prix</h1>
+		<div class="faq-search">
+			<input type="text" placeholder="Rechercher dans Politique de prix" />
+		</div>
+		<div id="accordionPrice" class="accordion">
+			<div class="pt-2">
+				<p>Altitude Sports s'engage à offrir à sa clientèle les prix les plus avantageux. Si vous avez une question concernant notre politique d'égalisation des prix ou désirez obtenir un ajustement sur une commande déjà passée, nous vous invitons à contacter notre équipe du service à la clientèle. Un de nos agents se fera un plaisir de vous aider.</p>
+				<p>Toutes les demandes d’égalisation de prix se doivent de respecter les conditions suivantes:</p>
+				<ul>
+					<li>Si vous trouvez le produit acheté chez Altitude Sports affiché à prix moindre chez un compétiteur, ou si le prix affiché sur notre site web a changé dans les 15 jours suivants la date d'achat, Altitude Sports s'engage à remettre la différence sous forme d'Alti Dollars dans votre compte client ;</li>
+					<li>Le compétiteur se doit d’être une compagnie basée en Amérique du Nord, ainsi qu’un détaillant autorisé de la marque et du produit en question. De plus, le compétiteur devra être autorisé à expédier la marque et le produit au Canada ;</li>
+					<li>Le produit doit être identique, c'est à dire de la même marque, modèle, couleur, taille et issu de la même année de fabrication ;</li>
+					<li>Le produit en question se doit d'être disponible à en faire l'achat immédiat chez le compétiteur, et ce, au prix observé. Nous refuserons les égalisations de prix d'articles en rupture de stock ou de promotions obsolètes ;</li>
+					<li>Nos agents du service à la clientèle doivent être en mesure de vérifier les éléments pertinents à l'égalisation des prix avec nos compétiteurs par téléphone ou par internet. Les ententes verbales ne seront pas considérées ;</li>
+					<li>Lorsque nous égalisons le prix d'un compétiteur, nous incluons tous frais de transport qui seraient applicables au prix annoncé. Cela signifie que si le compétiteur vend un produit à 200 $, mais réclame 50 $ afin de couvrir les frais de poste, nous égalerons le prix à 250 $. Cela s'applique également à tous les frais supplémentaires applicables ;</li>
+					<li>Toutes les demandes d'égalisation de prix seront effectuées exclusivement en dollars canadiens. Si une égalisation de prix est demandée pour un produit vendu en dollars américains, nous nous référerons au taux de change quotidien de la Banque du Canada afin de faire la conversion en dollars canadiens ;</li>
+					<li>Les sites de vente aux enchères, les ventes au rabais et de liquidation, les produits usagés, les modèles de démonstration ou les sites internet non officiels sont exclus de cette politique. Veuillez noter qu'aucun ajustement de prix n'est possible avec La Dernière Chasse et Amazon ;</li>
+					<li>Nos prix en ligne correspondent à nos prix en boutique. Nous égalons aussi les prix des détaillants traditionnels et de commerce en ligne qui satisfont nos critères d’égalisation des prix mentionnés plus haut ;</li>
+					<li>Vous pouvez retourner un article qui a bénéficié d’une égalisation des prix. Si vous désirez acheter le même produit (même couleur et année de fabrication) dans une taille différente, mais que ce dernier n'est plus disponible ou qu’il n’est plus en rabais, il est à l’entière discrétion d’Altitude Sports d’égaler le prix sur le produit de remplacement. Des frais de poste peuvent s'appliquer ;</li>
+					<li>Vous pouvez retourner un article qui a bénéficié d’une égalisation des prix. Si vous désirez acheter le même produit (même couleur et année de fabrication) dans une taille différente, mais que ce dernier n'est plus en vente, Altitude Sports honorera le prix payé initialement. Des frais de poste pourraient toutefois s'appliquer ;</li>
+					<li>Nous nous réservons le droit de limiter le nombre d'articles achetés bénéficiant de notre politique d'égalisation des prix ;</li>
+					<li>Notre égalisation des prix ne peut être jumelée à aucun autre rabais ou promotion additionnelle. Seul le rabais membre de 5 % (s'il y a lieu) peut être appliqué au prix ajusté.</li>
+					<li>Notre politique d'égalisation des prix ne s’applique pas sur les articles provenant des vendeurs de la Place de marché (voir la page <a href="/pages/marketplace-osprey"><u>Osprey</u></a>).</li>
+				</ul>
+				<p>N'hésitez pas à contacter un des représentants au service à la clientèle d'Altitude Sports si vous avez des questions.</p>
+			</div>
+		</div>
+		<!-- #accordionPrice -->
+	</div>
+	<!-- TAXES -->
+	<div class="content" id="taxes">
+		<h1>Taxes de vente</h1>
+		<div class="faq-search">
+			<input type="text" placeholder="Rechercher dans Taxes de vente" />
+		</div>
+		<div id="accordionTaxes" class="accordion">
+			<div class="pt-2">
+				<p>Les taxes de vente peuvent s'appliquer à votre commande (marchandise et frais de livraison) selon l'endroit où vous faites livrer votre colis.</p>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Commandes livrées au Canada</h2>
+				</div>
+				<div class="card-body">
+					<table style="width: 400px; font-size: 12px;" cellspacing="0" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<td class="border-bottom p-1"><strong>Alberta</strong> (AB)</td>
+								<td class="border-bottom p-1">TPS de 5 %</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Colombie-Britannique</strong> (BC)</td>
+								<td class="border-bottom p-1">TPS de 5 %</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Île-du-Prince-Édouard</strong> (IPE)</td>
+								<td class="border-bottom p-1">TVH de 14 %</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Manitoba</strong> (MB)</td>
+								<td class="border-bottom p-1">TPS de 5 %</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Nouveau-Brunswick</strong> (NB)</td>
+								<td class="border-bottom p-1">TVH de 13 %</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Nouvelle-Écosse</strong> (NS)</td>
+								<td class="border-bottom p-1">TVH de 15 %</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Nunavut</strong> (NU)</td>
+								<td class="border-bottom p-1">TPS de 5 %</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Ontario</strong> (ON)</td>
+								<td class="border-bottom p-1">TVH de 13 %*</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Québec</strong> (QC)</td>
+								<td class="border-bottom p-1">TPS de 5 %
+									<br />TVQ de 9,975 %
+								</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Saskatchewan</strong> (SK)</td>
+								<td class="border-bottom p-1">TPS de 5 %</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Terre-Neuve-et-Labrador</strong> (NL)</td>
+								<td class="border-bottom p-1">TVH de 13 %</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Territoires du Nord-Ouest</strong> (NT)</td>
+								<td class="border-bottom p-1">TPS de 5 %</td>
+							</tr>
+							<tr>
+								<td class="border-bottom p-1"><strong>Yukon</strong> (YT)</td>
+								<td class="border-bottom p-1">TPS de 5 %</td>
+							</tr>
+						</tbody>
+					</table>
+					<p class="smaller" style="font-size: 0.875em;">*Les clients qui font livrer leur colis en Ontario n'ont pas à payer la « fraction Ontario de la TVH » de 8 % pour les vêtements et les chaussures pour enfants. Des taxes de 5 % s'appliquent donc sur cette catégorie de produits. Puisque la plateforme web d'Altitude Sports ne supporte pas ce genre d'exception, il est conseillé de passer sa commande avec le montant de TVH complet (13 %), et de contacter un des conseillers au service à la clientèle afin que le montant de taxes chargé soit ensuite corrigé manuellement.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Commandes livrées à l'international</h2>
+				</div>
+				<div class="card-body">
+					<p>Les commandes livrées à l'extérieur du Canada sont expédiées par Postes Canada, et ne sont pas assujetties aux taxes canadiennes. Puisque les colis passent par les douanes, ils sont assujettis aux droits de douane à l'importation, aux taxes du pays où le colis est livré et aux frais d'administration douanière. Dans la plupart des cas, une facture douanière payable au moment de la livraison accompagnera votre colis ou suivra par courrier. Les destinataires sont responsables et tenus d'acquitter ces frais, droits et taxes additionnels. Veuillez noter qu'Altitude Sports n'est pas en mesure de fournir des estimations quant aux droits de douane. Il est recommandé de s'informer au bureau des douanes le plus près avant de passer votre commande en ligne.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- WARRANTY -->
+	<div class="content" id="warranty">
+		<h1>Garantie</h1>
+		<div class="faq-search">
+			<input type="text" placeholder="Rechercher dans Garantie" />
+		</div>
+		<div id="accordionWarranty" class="accordion">
+			<div class="card">
+				<div class="card-header">
+					<h2>Garantie Altitude Sports</h2>
+				</div>
+				<div class="card-body">
+					<p>Altitude Sports garantit votre achat pendant la première année. Si un produit vendu s'avère défectueux à l'intérieur de cette période, nous vous offrirons une réparation, un remplacement ou des Alti Dollars, dépendamment de l’état de l’item défectueux et de sa disponibilité sur notre site. Les coûts de livraison pour le renvoi du produit par poste régulière seront défrayés par Altitude Sports, partout au Canada.</p>
+					<p>Veuillez noter que cette garantie ne couvre pas les usages excessifs, les bris accidentels et l'usure normale.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Retours postaux</h2>
+				</div>
+				<div class="card-body">
+					<p>Vous avez simplement à contacter notre service à la clientèle, qui vous fournira un bordereau de retour prépayé que vous devrez imprimer et apposer sur votre colis de retour. Svp inscrire « GARANTIE/WARRANTY » sur votre colis et il vous restera seulement à nous le retourner par la poste.</p>
+					<p>Altitude Sports vous fera ensuite parvenir un courriel vous informant des possibilités de garanties offertes.</p>
+					<p><strong>Il est très important que le produit retourné soit parfaitement propre et nettoyé, selon les exigences du manufacturier. Altitude Sports se réserve le droit de retourner un produit aux frais du client (aller-retour) si cette condition n’est pas remplie.</strong></p>
+					<p>Veuillez noter que vous pouvez aussi simplement retourner l’article défectueux en boutique.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Garantie du manufacturier</h2>
+				</div>
+				<div class="card-body">
+					<p>Une grande proportion des produits vendus sont couverts par des garanties manufacturières prolongées. Celles-ci couvrent les défauts de fabrication, mais pas les abus, les bris accidentels et l'usure normale. Altitude Sports vous invite à contacter un de ses conseillers au service à la clientèle afin de connaître la garantie du manufacturier pour un produit en particulier.</p>
+					<p>Si vous le désirez, nous nous ferons un plaisir de vous faciliter le retour du produit auprès du manufacturier en question. Veuillez allouer un délai de 4 à 6 semaines.</p>
+					<p>Les frais postaux pour l'ensemble de l'opération sont à la charge du client et varient selon le cas. Ceux-ci doivent être payés à Altitude Sports au début du processus. Le coût total est défini par le service des garanties, joignable à travers le service à la clientèle. Ces frais incluent le transport postal du client jusqu'à la compagnie et de la compagnie vers le client.</p>
+					<p><strong>Il est très important que le produit retourné pour un problème de garantie soit parfaitement propre et nettoyé, selon les exigences du manufacturier. Altitude Sports se réserve le droit de retourner un produit aux frais du client (aller-retour) si cette condition n’est pas remplie.</strong></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- MARKETPLACE -->
+	<div class="content" id="marketplace">
+		<h1 class="mb-4">Place de marché <i class="alti-icon alti-icon-lg alti-icon-marketplace"></i></h1>
+		<div class="faq-search">
+			<input type="text" placeholder="Rechercher dans Place de marché" />
+		</div>
+		<div id="accordionMarketplace" class="accordion">
+			<div>
+				<p class="mt-0">La Place de marché Altitude Sports permet d’offrir à notre clientèle notre expérience de magasinage, tout en offrant une sélection de produits élargie provenant de vendeurs soigneusement choisis.</p>
+				<p>Découvrez les vendeurs <a href="/pages/marketplace-garneau"><u>Garneau</u></a> et <a href="/pages/marketplace-osprey"><u>Osprey</u></a> de la Place de marché Altitude Sports.</p>
+				<p style="margin-top: 2.25rem;">Consultez la FAQ ci-dessous :</p>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Quels sont les avantages de la Place de marché Altitude Sports? </h2>
+				</div>
+				<div class="card-body">
+					<p>La Place de marché vous donne accès à une plus grande sélection de produits, de tailles et de couleurs des plus courues, provenant directement de l’inventaire d’un vendeur de la Place de marché.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>En tant que membre à vie Altitude Sports, puis-je aussi profiter du rabais membre et des retours gratuits en utilisant la Place de marché?</h2>
+				</div>
+				<div class="card-body">
+					<p>Le rabais membre et les retours gratuits ne s’appliquent pas sur les articles achetés auprès d’un vendeur de la Place de marché. Le coût d’un retour à un vendeur de la Place de marché est de 13$.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>La livraison est-elle gratuite sur les commandes de 49 $ et plus?</h2>
+				</div>
+				<div class="card-body">
+					<p>Malheureusement, les articles provenant de la Place de marché ne peuvent pas bénéficier de la livraison gratuite.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Où devrais-je retourner un article provenant de la Place de marché?</h2>
+				</div>
+				<div class="card-body">
+					<p>Tout article provenant de la Place de marché doit être renvoyé directement au vendeur, et non à Altitude Sports. <a href="#marketplace-return">Consultez les conditions de retour de la Place de marché.</a></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Puis-je faire égaler le prix, utiliser un code rabais ou utilisez une carte cadeau pour les produits vendus sur la Place de marché?</h2>
+				</div>
+				<div class="card-body">
+					<p>Les codes rabais et les cartes cadeau ne sont pas applicables sur les produits offerts par les vendeurs de la Place de marché Altitude Sports. Altitude Sports ne peut également pas égaler les prix des produits vendus par un vendeur de la Place de marché Altitude Sports.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Qu’en est-il pour le transport et la livraison des produits achetés d’un vendeur de la Place de marché Altitude Sports?</h2>
+				</div>
+				<div class="card-body">
+					<p>Les vendeurs de la Place de marché sont entièrement responsables du transport et de la livraison des articles achetés sur la Place de marché Altitude Sports. Si les produits que vous avez commandés ne sont plus disponibles auprès du vendeur de Place de marché, il est de la responsabilité du vendeur d’annuler votre commande.</p>
+				</div>
+			</div>
+		</div>
+		<div class="mt-3">
+			<p style="margin-top: 2rem;">Pour obtenir de plus amples renseignements sur la Place de marché Altitude Sports et nos vendeurs, veuillez consulter les sections suivantes : <a href="#shipping"><u>livraison</u></a>, <a href="#returns"><u>retours</u></a>, <a href="#price"><u>politique de prix</u></a> et <a href="/pages/terms-of-use-conditions-d-utilisation"><u>conditions d’utilisation</u></a>. Pour en apprendre davantage sur la politique de confidentialité de nos vendeurs, veuillez visiter leurs sites Web.</p>
+		</div>
+	</div>
+	<!-- FAQ -->
+	<div class="content" id="faq">
+		<h1>Foire aux questions</h1>
+		<div class="faq-search">
+			<input type="text" placeholder="Rechercher dans FAQ" />
+		</div>
+		<div id="accordionFAQ" class="accordion">
+			<div class="card">
+				<div class="card-header">
+					<h2>Est-ce que le site Web affiche les disponibilités du magasin de Mont Tremblant?</h2>
+				</div>
+				<div class="card-body">
+					<p>Non, le site ne permet pas de savoir si le produit est disponible à la boutique de Mont Tremblant. Pour savoir si un produit est disponible, contactez directement le magasin en appelant au 1 800 729-0322.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Pourquoi le rabais du membership ne s'affiche pas dans mon panier d'achat?</h2>
+				</div>
+				<div class="card-body">
+					<p>Afin de voir le rabais du membership, vous devez vous connecter à votre compte client. Une fois connecté à votre compte, le rabais s'appliquera sur le panier d'achats.</p>
+					<p>Le rabais membre n’est pas applicable sur les achats faits sur la Place de marché.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Quels sont les prix en dollar américain?</h2>
+				</div>
+				<div class="card-body">
+					<p>Tous les prix affichés sur Altitude Sports sont en dollar canadien.</p>
+					<p>Le montant en dollar américain dépendra de votre banque et du service de paiement utilisé. Par exemple, si vous payez par carte de crédit, le taux journalier de votre banque vous sera chargé, tandis que si vous utilisez le service de PayPal, le taux de change sera fixé par PayPal. Pour cette raison, nous ne pouvons vous dire quel est le prix exact d’un produit en devise américaine.</p>
+					<p>Si vous nous retournez un article, nous vous rembourserons le montant que vous avez payé en dollars canadiens. Notez que dans certains rares cas, le montant que vous recevrez dans votre pays de provenance pourrait légèrement différer du montant remboursé en raison des différentes devises et du taux de change en vigueur au moment de traiter votre retour.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Où dois-je entrer mon code rabais?</h2>
+				</div>
+				<div class="card-body" id="faq_discountCode">
+					<p>Sur la page «informations et paiement», vos items sont listés sur la droite au-dessus d’une boîte «carte cadeau ou code rabais». Inscrivez-y votre code et cliquez sur le bouton «appliquer» qui se trouve à droite. Vous verrez le rabais s’appliquer instantanément. Veuillez prendre note que vous ne pouvez utiliser plus d’un code rabais par commande.</p>
+					<p>Veuillez noter que les codes rabais ne s’appliquent pas aux commandes faites sur la Place de marché.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" id="headingFAQorders5">
+					<h2>Pourquoi mon code rabais ne fonctionne-t-il pas?</h2>
+				</div>
+				<div class="card-body" id="faq_discountWork">
+					<p>Il y a trois raisons qui expliquent pourquoi votre code rabais refuse de s’appliquer.</p>
+					<p><strong>Premièrement,</strong> assurez-vous que la date d’expiration de votre code n’est pas passée.</p>
+					<p><strong>Deuxièmement,</strong> assurez-vous que votre produit n’est pas exclu de la promotion et vérifiez que le montant de votre commande correspond au minimum requis pour l’application du code.</p>
+					<p><strong>Troisièmement,</strong> il se peut que vous ayez omis d’entrer des informations.</p>
+					<p><a href="/pages/coupons-discount-codes-rabais">Cliquez ici</a> pour consulter la liste des codes rabais en vigueur et pour en connaître les exclusions.</p>
+					<p>Veuillez noter que les codes rabais ne s’appliquent pas sur les articles achetés auprès d’un vendeur de la <a href="#marketplace">Place de marché.</a></p>
+				</div>
+			</div>
+			<div class="card">
+			<div class="card-header">
+			<h2>Puis-je appliquer plus d’un code rabais à la fois?</h2>
+			</div>
+			<div class="card-body">
+			<p>Non. Un seul code rabais par commande peut être utilisé.</p>
+			</div>
+			</div>
+			<div class="card">
+			<div class="card-header">
+			<h2>Que sont les Alti Dollars et les crédits expirables?</h2>
+			</div>
+			<div class="card-body" id="faq_altidollars">
+			<p>Les <strong>Alti Dollars</strong> sont notre propre devise. Chaque Alti Dollars équivaut à 1 dollar canadien et n’expire jamais. Les Alti Dollars sont délivrés lors d’un remboursement dû à un ajustement de prix (lien vers Politique de prix). Si vous retournez un produit, tous les Alti Dollars utilisés lors de l’achat seront automatiquement versés dans votre compte et pourront être utilisés lors du prochain achat.</p>
+			<p>Les <strong>crédits expirables</strong> sont acquis lorsque vous faites une revue de l’un des produits que vous avez achetés. Soyez vigilants, car ces crédits ont une date d’expiration! Notez que vous pouvez les utiliser qu’une seule fois et qu’ils ne seront pas remboursés dans votre compte si vous retournez les produits achetés.</p>
+			</div>
+			</div>
+			<div class="card">
+			<div class="card-header">
+			<h2>Comment puis-je utiliser mes crédits?</h2>
+			</div>
+			<div class="card-body" id="faq_storeCredit">
+			<p>Pour utiliser vos crédits, assurez-vous de vous <a href="/account/login">connecter à votre compte</a> avant de compléter votre commande. Au moment de compléter votre commande, à l’étape du paiement, vous trouverez à votre droite « Vous avez X crédits temporaires » et/ou « Vous avez X Alti Dollars ». Cochez la case du ou des crédits que vous désirez appliquer. Vous remarquerez immédiatement que le total de votre panier s’est mis à jour.</p>
+			<p>Si vous ne savez pas comment vous connecter à votre compte, contactez notre service à la clientèle au 1 855 585-6266 ou par courriel à <a href="mailto:info@altitude-sports.com">info@altitude-sports.com</a>.</p>
+			</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Pourquoi ma carte cadeau ne fonctionne-t-elle pas?</h2>
+				</div>
+				<div class="card-body">
+					<p>Nous avons mis à jour notre site internet le 13 avril 2017. Si votre carte cadeau provient de notre ancien site, elle est toujours valide sur le nouveau.</p>
+					<p>Au moment de régler votre commande, inscrivez simplement ALT au début de la série de chiffres.</p>
+					<p>Par exemple: <em>mun8p3bco69u</em> deviendra <em>ALTmun8p3bco69u</em>.</p>
+					<p>Veuillez noter que les cartes-cadeaux ne sont pas valides pour les achats provenant d’un vendeur de la <a href="#marketplace">Place de marché</a>.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Comment vérifier le statut de ma commande?</h2>
+				</div>
+				<div class="card-body">
+					<p>Vous pouvez vérifier le statut de votre commande en tout temps si vous l'avez passée à partir de votre compte. Si vous avez passé une commande en tant qu’invité, consultez votre boîte de courriels (pensez à vérifier vos courriels indésirables) pour y trouver le mot de passe servant à vous connecter à votre compte. Voici comment vérifier le statut de votre commande :</p>
+					<ol>
+						<li><a href="/account/login" target="_blank">Connectez-vous à votre compte</a></li>
+						<li>Accédez à la section « Mes commandes / Remboursements »</li>
+						<li>Repérez votre commande. Vous pouvez constater le statut de celle-ci dans la colonne correspondante</li>
+					</ol>
+					<p>Voici un petit lexique pour vous aider à comprendre la signification du statut de votre commande :</p>
+					<ul>
+						<li><em>Payé</em> : Cette commande a été payée en totalité</li>
+						<li><em>Partiellement remboursé</em> : Cette commande comprend un ou plusieurs articles ayant été remboursés</li>
+						<li><em>Remboursé</em> : Tous les articles de la commande ont été remboursés et la commande est considérée fermée</li>
+						<li><em>Livré</em> : Cette commande a été ramassée, emballée et expédiée</li>
+						<li><em>Non livré </em>: Cette commande n'a pas encore été expédiée.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Pourquoi ma commande doit-elle passer à travers un processus de vérification?</h2>
+				</div>
+				<div class="card-body">
+					<p>Toutes les commandes sont sujettes à vérification. Cela nous garantit que les informations fournies sont justes. C’est aussi un moyen efficace de vous protéger contre les fraudeurs.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Pourquoi ma commande a-t-elle été annulée?</h2>
+				</div>
+				<div class="card-body">
+					<p>Nous travaillons très fort à protéger nos clients. Notre système annulera automatiquement une commande si les informations de facturation ne correspondent pas à notre processus de vérification. Si votre commande a été annulée, n’hésitez pas à contacter notre service à la clientèle au <strong>1 855 585-6266</strong> ou envoyez un courriel à <a href="mailto:info@altitude-sports.com"><strong>info@altitude-sports.com</strong></a> pour obtenir plus de détails à ce sujet.</p>
+					<p>Veuillez noter que le vendeur de la <a href="#marketplace">Place de marché</a> peut annuler la commande si un article commandé n’est plus disponible.</p>
+				</div>
+			</div>
+			<!--<div class="card">
+				<div class="card-header">
+				    <h2>Quels sont les rabais pour les commandes de groupe?</h2>
+				</div>
+				<div class="card-body">
+				    <p>Si vous commandez plus de 5 unités du même modèle, vous êtes admissible à un rabais pour les commandes de groupe. Ce dernier varie en fonction de plusieurs critères notamment la quantité, le type de produit, la marque et la période de l'année. Contactez un de nos conseillers au service à la clientèle qui se fera un plaisir de vous préparer une soumission.</p>
+				    <p><strong>Conditions particulières aux ventes de groupe</strong></p>
+				    <p>Le paiement se fait par carte de crédit au moment de la livraison ou par chèque, 10 jours ouvrables avant la livraison;</p>
+				    <p>Les commandes de groupes sont toutes finales, non remboursables et non échangeables;</p>
+				    <p>La personnalisation des produits peut affecter la garantie d'Altitude Sports ou celle du manufacturier. Contactez un de nos conseillers au service à la clientèle pour plus de détails à ce sujet.</p>
+				</div>
+				</div>-->
+			<div class="card">
+				<div class="card-header">
+					<h2>Qu'est-ce que la Place de marché?</h2>
+				</div>
+				<div class="card-body">
+					<p>La Place de marché Altitude Sports vous offre notre expérience de magasinage avec une plus grande sélection de produits provenant de vendeurs triés sur le volet.</p>
+				</div>
+			</div>
+			<!-- END FAQ orders -->
+			<!-- BEGIN FAQ shipping -->
+			<div class="card">
+				<div class="card-header">
+					<h2>Comment puis-je savoir si ma commande de plus de 49 $ est éligible à la livraison standard gratuite au Canada?</h2>
+				</div>
+				<div class="card-body">
+					<p>Pour valider que votre futur achat se qualifie pour l'envoi gratuit à l'adresse souhaitée, vous n'avez qu'à ajouter le ou les produits souhaités dans votre panier d'achats. À la première étape de votre panier d'achats, vous pouvez obtenir une estimation des frais d'envoi pour l'ensemble des méthodes de livraison disponibles en entrant le pays, la province et le code postal d'envoi. Cliquez ensuite sur « Obtenir une estimation ». En quelques secondes, un menu nommé « Sélectionnez une méthode de livraison » déroulant apparaîtra sous ce bouton avec toutes les options disponibles, leur date d'arrivée et leur coût respectif. Vous pourrez ainsi voir si votre futur achat se qualifie pour la livraison standard gratuite avec FedEx et/ou Postes Canada.</p>
+					<p>Si les méthodes standards présentent certains frais, cela est dû soit à l'adresse de livraison, à la dimension ou au poids exceptionnels de votre commande. Altitude Sports tente de minimiser ces surcharges au maximum en négociant les meilleurs taux avec les compagnies de livraison et en assumant quand même la majorité des frais d'envoi pour ce type de situation. Le Canada étant un pays très vaste, une limite doit toutefois être établie pour que ces activités commerciales demeurent viables à long terme. Nous vous remercions de votre compréhension.</p>
+					<p>Veuillez noter que les retours gratuits ne s’appliquent pas sur les commandes provenant d’un vendeur de la <a href="#marketplace">Place de marché</a>.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Comment obtenir la date estimée de livraison de mon colis?</h2>
+				</div>
+				<div class="card-body" id="faq_estimatedDelivery">
+					<p>Dans votre panier, cliquez sur « Passez à la caisse ». Remplissez les informations concernant votre adresse d'expédition. Plus bas, dans la section « Méthode de livraison », vous trouverez une estimation du temps de livraison pour chaque méthode.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Où puis-je obtenir le numéro de suivi de ma commande?</h2>
+				</div>
+				<div class="card-body" id="faq_getTracking">
+					<p>Dès que votre commande sera expédiée, vous recevrez une confirmation par courriel. Sous la méthode d’expédition que vous avez sélectionnée, vous y retrouverez le nom du transporteur et votre numéro de repérage. Pour toutes questions, n’hésitez pas à contacter notre service à la clientèle par clavardage, courriel ou téléphone au 1 855 585-6266.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Quelles marques ne peuvent pas être expédiées à l’extérieur du Canada?</h2>
+				</div>
+				<div class="card-body">
+					<p>En raison d’accords commerciaux avec nos fournisseurs, nous ne pouvons expédier certaines marques à l’extérieur du Canada. En magasinant vos produits, assurez-vous qu’ils peuvent être expédiés dans votre pays en vous référant aux icônes suivants :</p>
+					<ul>
+						<li><img src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/shipping-worldwide.png" alt="Worldwide" style="padding-right: 5px;" />Partout dans le monde</li>
+						<li><img src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada-us.png" alt="Canada &amp; US only" style="padding-right: 5px;" />Canada et États-unis seulement</li>
+						<li><img src="https://cdn.shopify.com/s/files/1/1230/9376/t/81/assets/canada.png" alt="Canada only" style="padding-right: 5px;" />Canada seulement</li>
+					</ul>
+					<p><i>N.B.</i> Altitude Sports ne peut expédier en Europe en raison de la réglementation GBPR.</p>
+					<p>Ces icônes se trouvent sur chaque page de produit, sous le bouton « ajouter au panier ». Vous les retrouverez également dans votre panier d’achats, dans le récapitulatif de votre commande.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Combien coûte la livraison pour les États-Unis?</h2>
+				</div>
+				<div class="card-body">
+					<p>Des frais de livraison s’appliquent pour les livraisons des commandes de moins de 99 $ (avant taxes et frais de livraison) pour les États-Unis continentaux. La livraison pour les commandes de plus de 99 $ (avant taxes et frais de livraison) est gratuite pour les États-Unis continentaux. Des frais supplémentaires s’appliquent pour les commandes expédiées en Alaska, à Hawaï et à Porto Rico. Prévoyez de 2 à 5 jours ouvrables pour la livraison.</p>
+				</div>
+			</div>
+			<!-- END FAQ shipping -->
+			<!-- BEGIN FAQ accounts -->
+			<div class="card">
+				<div class="card-header">
+					<h2>Pourquoi me demande-t-on un mot de passe si je n’ai jamais créé de compte?</h2>
+				</div>
+				<div class="card-body">
+					<p>Lorsque vous passez une commande sur Altitude Sports, un profil utilisateur est créé dans notre système. Vous recevrez un courriel vous invitant à activer votre compte. Nous vous conseillons fortement de le faire dès la réception du courriel pour faciliter l'accès à vos informations de compte et à votre historique de commande. Si vous avez besoin d'assistance, n'hésitez pas à contacter notre service à la clientèle.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Vous avez oublié votre mot de passe?</h2>
+				</div>
+				<div class="card-body">
+					<p>Voici donc comment retrouver votre mot de passe en 3 étapes faciles :</p>
+					<ol>
+						<li><a href="/account/login">Cliquez sur ce lien</a>, puis cliquez sur « Mot de passe oublié? » Dans le champ « Adresse courriel », entrez l'adresse courriel que vous avez utilisée lors de votre dernier achat chez Altitude Sports. Cliquez ensuite sur « Soumettre ».</li>
+						<li>Un courriel intitulé « Réinitialisez votre mot de passe » vous sera envoyé (pensez à vérifier vos indésirables). Ouvrez-le et lisez attentivement les instructions. Cliquez sur le lien fourni afin de poursuivre vers la prochaine étape du processus.</li>
+						<li>Entrez maintenant votre nouveau mot de passe dans les deux champs correspondants. Le mot de passe que vous choisissez doit demeurer confidentiel. Nous vous conseillons d'utiliser des chiffres, des symboles, et des lettres minuscules et majuscules dans votre mot de passe afin de le rendre plus difficile à deviner ou à déchiffrer. Votre mot de passe doit contenir entre 6 et 15 caractères. Pour obtenir plus d’information sur la façon de créer un mot de passe sécuritaire, veuillez lire <a target="_blank" href="https://support.google.com/accounts/answer/9094506?hl=fr&visit_id=636746977446480924-1707608928&rd=1">cette page Google</a>. Cliquez ensuite sur le bouton « Réinitialiser ».</li>
+						<li>Vous serez ensuite automatiquement redirigés à la page d’accueil de votre compte.</li>
+					</ol>
+					<p>Vous serez ensuite automatiquement redirigés à la page d’accueil de votre compte. Si vous rencontrez des difficultés dans ce processus, n'hésitez pas à contacter un de nos conseillers au service à la clientèle.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- CONTACT -->
+	<div class="content" id="contact">
+		<h2>Nous contacter</h2>
+		<div id="accordionContact" class="accordion">
+			<div>
+				<p>Vous avez une question ou un problème? Obtenez la réponse la plus rapide possible en remplissant ce formulaire :</p>
+				<p>
+					<button style="border: 1px solid #000;" class="button _zdContactBtn" data-sendto="https://altitudesports.zendesk.com/hc/fr/requests/new">Cliquer ici</button>
+				</p>
+				<p>Si vous avez besoin d'un complément d'information ou de conseils, n'hésitez pas à contacter un de nos conseillers au service à la clientèle d'une des manières suivantes :</p>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Clavardage</h2>
+				</div>
+				<div class="card-body">
+					<p>Pour faire une demande de clavardage avec nous, vous pouvez simplement cliquer sur l’icône dans le coin droit au bas de votre écran :</p>
+					<p><img src="https://cdn.shopify.com/s/files/1/1230/9376/files/chat-capture-FR.png" /></p>
+					<p>Des conseillers au service à la clientèle sont disponibles pour le clavardage du lundi au vendredi, de 9 h à 22 h, samedi, de 10 h à 18 h et dimanche, de 12 h à 22 h HE.</p>
+					<p><em>* Veuillez noter que l'icône changera à « Aide » si notre service de clavardage n'est pas disponible. Cliquez sur celui-ci et utiliser le formulaire pour nous envoyer une demande.</em></p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Téléphone</h2>
+				</div>
+				<div class="card-body">
+					<p>De la région de Montréal : 514 495-1111
+						<br />D'ailleurs en Amérique du Nord : 1 855 585-6266
+						<br />De l'extérieur de l'Amérique du Nord : 1 514 495-1111
+					</p>
+					<p>Des conseillers au service à la clientèle prennent les appels du lundi au vendredi, de 9 h à 22 h, le samedi de 10 h à 18 h et le dimanche de 12 h à 22 h.</p>
+					<p>Prendre note que nos heures d’opérations sont basées sur l’heure de l’Est.</p>
+					<p>Altitude Sports s'engage à vous rappeler dans un délai de 1 à 2 jours ouvrables maximum si vous laissez un message sur la boîte vocale.</p>
+					<p>À l'occasion du Vendredi fou, du 19 au 26 novembre, nos conseillers seront disponibles de 9 h à 00 h 30 HE. Le retour aux heures régulières se fera dès le mardi 27 novembre.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Courriel</h2>
+				</div>
+				<div class="card-body">
+					<p><a href="mailto:info@altitude-sports.com">info@altitude-sports.com</a></p>
+					<p>Altitude Sports s'engage à vous donner une réponse à votre question dans un délai de 1 à 2 jours ouvrables maximum.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Notre magasin</h2>
+				</div>
+				<div class="card-body">
+					<p>Pour rencontrer les conseillers d'Altitude Sports, visitez notre magasin à Mont-Tremblant, au Québec.</p>
+					<h4 id="tremblant" style="margin: 0;">Altitude Sports Mont-Tremblant</h4>
+					<p><a target="_blank" href="https://www.google.ca/maps/place/Altitude-sports.com/@46.117514,-74.582148,15z/data=!4m5!3m4!1s0x0:0xb8c41484579a53cc!8m2!3d46.1157283!4d-74.582168?hl=en">Factoreries Tremblant<br />2555, rue de l'Aulnaie, suite 203<br />Mont-Tremblant (Québec)  J8E 0E5</a></p>
+					<p>Téléphone : 1 855 585-6266
+						<br />Courriel : tremblant@altitude-sports.com
+						<br />Juste à côté du Starbucks sur la route 117
+					</p>
+					<!--
+						<div class="holiday">
+						    <h3>Horaire des fêtes :</h3>
+						    <p>
+						        <strong>Du 21 au 31 décembre :<br></strong>
+						        Lundi au mercredi, de 10 h à 21 h<br>
+						        Jeudi 24 et 31 décembre, de 10 h à 17 h<br>
+						        Samedi et dimanche, de 10 h à 17 h<br>
+						    </p>
+						    <p><strong>FERMÉ le 25 décembre et le 1er janvier</strong></p>
+						</div>
+						-->
+					<h4>Heures d’ouverture :</h4>
+					<ul style="list-style: none; padding: 0;">
+						<li><span style="display:inline-block;width:7em">Lundi :</span> 10 h à 18 h</li>
+						<li><span style="display:inline-block;width:7em">Mardi :</span> 10 h à 18 h</li>
+						<li><span style="display:inline-block;width:7em">Mercredi :</span> 10 h à 18 h</li>
+						<li><span style="display:inline-block;width:7em">Jeudi :</span> 12 h à 21 h</li>
+						<li><span style="display:inline-block;width:7em">Vendredi :</span> 12 h à 21 h</li>
+						<li><span style="display:inline-block;width:7em">Samedi :</span> 10 h à 17 h</li>
+						<li><span style="display:inline-block;width:7em">Dimanche :</span> 10 h à 17 h</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END Contact -->
 </div>
