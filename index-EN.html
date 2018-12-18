@@ -13,6 +13,18 @@
 	border: none;
 	}
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+	$( "#faq-sidebar ul li a" ).click(function() {
+		//console.log("clock");
+		var hash = location.hash.replace('#','');
+		if(hash != ''){
+			console.log(hash);
+			location.hash = '';
+		}
+	});
+});
+</script>
 <div class="col-12 col-md-3" id="faq-sidebar">
 	<h2 class="pt-1">Help Center</h2>
 	<ul class="left-menu help-center list-unstyled d-none d-md-block">
@@ -24,6 +36,7 @@
 		<li class="h4"><a href="#marketplace">Marketplace</a> <i class="alti-icon alti-icon-marketplace"></i></li>
 		<li class="h4 d-md-none"><a href="#faq">FAQ</a></li>
 		<li class="h4"><a href="#contact">Contact Us</a></li>
+		<li class="h4" style="border-top: 1px #000 solid;margin-top: 1.5em; padding-top: 1.5em;"><a href="#boxingday">Boxing Day FAQ</a></li>
 	</ul>
 	<h2 class="d-none d-md-block faq-menu">FAQ</h2>
 	<ul class="top-questions list-unstyled d-none d-md-block">
@@ -1137,5 +1150,135 @@
 			</div>
 		</div>
 	</div>
+	<!-- Boxing Day -->
+	<div class="content" id="boxingday">
+		<h1>Boxing Day FAQ</h1>
+		<p>If you’re familiar with Boxing Day, you’re probably busy scoping out your favourite shops and bookmarking your favourite online deals.</p>
+		<p>To improve your Boxing Day shopping experience, we’ve created the following FAQ list, a collection of the most Frequently Asked Questions from our clients in past years. The hope is that all your questions will be answered within. Then, all that’s left is to circle the date and set your alarm to find <a href="/pages/boxing-day">the best deals</a>.</p>
+		<div id="accordionBoxingday" class="accordion">
+			<div class="card">
+				<div class="card-header">
+					<h2>When does Boxing Day begin?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-start-date">
+					<p>Boxing Day runs from <strong class="text-nowrap">December 25th</strong> until <span class="text-nowrap">January 1st</span>, but you can find <a href="/pages/boxing-day">special deals</a> on Altitude-sports.com as of <strong class="text-nowrap">December 19th</strong> thanks to our Pre Boxing Day sale.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>What happens if I buy something and then the price drops a few days later?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-price-drops">
+					<p>At Altitude Sports we have a price-matching policy that covers the 15 days after your purchase. If you purchase an item between now and Boxing Day, and either the price drops or you find the product cheaper elsewhere, we’ll match the price by crediting you for the price difference on the item in question. You can find all the details by visiting our <a href="#returns_3">price policy page</a>.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>What do I do to request a price match?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-request-price-drops">
+					<p>Please follow our price matching procedure by clicking the button below.</p>
+					<a href="#price" style="background-color: #eaeaea; color: #000; border: none; text-decoration: none; margin-bottom: 2em;" class="btn btn-primary btn-lg active" role="button" onmouseover="this.style.color='#fff'; this.style.backgroundColor='#4b4b4b'" onmouseout="this.style.color='#000'; this.style.backgroundColor='#eaeaea'">Request Price Match</a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>What brands will be discounted?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-discounted-brands">
+					<p>During Boxing Day, it is possible to find sales on brands that are rarely discounted, such as <a href="/collections/arcteryx">Arc’teryx</a>, <a href="/collections/the-north-face">The North Face</a>, <a href="/collections/quartz-co">Quartz Co.</a>, <a href="/collections/icebreaker">Icebreaker</a>, <a href="/collections/soia-kyo">SOIA & KYO</a>, <a href="/collections/sorel">Sorel</a>, <a href="/collections/fjallraven">Fjällräven</a> and <a href="/pages/boxing-day">several others</a>. In all, 300+ brands will be discounted during Boxing Day. Specific brands may not be discounted at first, but they might go on sale later in the week. Our Boxing Day sales calendar shows what day your favourite brands will be on sale. You can also subscribe to our newsletter to receive updates throughout the week on new discounts and promotions. In general, the brands that are not discounted on December 26th will remain full-price throughout the season.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Are sales final?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-sale-finals">
+					<p>No, they are not. Altitude Sports has a <a href="#returns_3">90-day return policy</a>. We encourage you to purchase multiple sizes of a product if you’re unsure of your size, because availability will be limited once Boxing Day is over. By doing this, you will increase your chances of finding the perfect fit. <a href="#returns">Our returns</a> are simple, straightforward and free for <a href="/products/membership">Altitude Sports Lifetime members</a> as well as our first-time customers.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>What if the products I buy don’t fit?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-return-fit">
+					<p>Don’t worry. As mentioned above, Altitude Sports has a <a href="#returns_3">90-day return policy</a>. All you need to do is follow the simple steps listed in this policy. Please make sure you return the purchased products in perfect condition, along with the tags and any packaging (ex: shoe boxes, clothes hangers, etc.). Refunds will usually be made within a period of 5 business days after the returned product has been received and processed.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>How can I get the biggest discount possible?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-bigger-discount">
+					<p>We suggest you follow these steps:</p>
+					<p><strong>1.</strong> <a href="/pages/subscription-abonnement">Subscribe to our newsletter</a>, receive exclusive coupon codes and be the first to know about upcoming discounts.</p>
+					<p><strong>2.</strong> Become an Altitude Sports Lifetime Member and receive an additional 5% off selected brands. You can become a member by <a href="/products/membership">purchasing our membership</a>, currently on sale for $9.99 (down from $24.99). It’s a one-time payment which applies to your first purchase and all future purchases made on Altitude Sports. You can purchase the membership at the same time as other products, so you can immediately benefit from the membership discount.</p>
+					<p><i>Please note that the Membership discount and free returns are not applicable on products purchased from a <a href="#marketplace">Marketplace</a> seller.</i></p>
+					<p><strong>3.</strong> Check the <a href="/pages/coupons-discount-codes-rabais">coupon and discount page</a> for discount codes that may be applicable on the items you’re wishing to purchase.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Will I receive my order later than usual during Boxing Day sales, as more people are ordering from Altitude Sports at the same time?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-delivery-later">
+					<p>At Altitude Sports, we’re proud to ship as quickly during high traffic periods as we do during the rest of the year. Our quick shipping is what sets us apart from the competition. However, due to the extreme volume of Boxing Day for shipping couriers, you may experience additional delays which are out of our control. </p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Is Canada Post a reliable option for delivering my order?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-canada-post-delivery">
+					<p>Yes. Canada Post’s backlog caused by their now-ended rotating strike, has been greatly reduced.</p>
+					<p>We highly recommend selecting Canada Post as your free shipping option as Canada Post has more easily accessible outlets to choose from, as opposed to any other provider in Canada. The return process is also much easier if you use Canada Post.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Are your discounts real or is your MSRP boosted so the discounts look unbelievably good?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-real-discounts">
+					<p>Our discounts are most certainly real. Our regular prices are established based on the Manufacturer’s Suggested Retail Price (MSRP). They are the same year-round, and it is only the discount that varies. We also do not buy additional models of manufactured clothing or jackets to sell at discounted prices only on Boxing Day. The products that we sell during the discount period are part of collections from exclusive brands we carry all year-round.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>What other website does a killer Boxing Day Sale?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-the-last-hunt">
+					<p><a href="https://www.thelasthunt.com/" target="_blank">The Last Hunt</a>, which already offers the best prices on leading products from past seasons, also offers additional sales on their already-discounted products. On Thelasthunt.com all sales are final, and price matching does not apply. If you like an item and the current discount, we suggest you buy it while it’s still available. If you wait too long, there’s a risk that the item will no longer be available. Keep in mind that sizes and colours are limited on Thelasthunt.com because they are collections from past seasons.</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>What if I still have questions about a product after reading the product description?</h2>
+				</div>
+				<div class="card-body" id="boxing-day-contact-us">
+					<p>Altitude Sports is proud to have a devoted <a href="#contact">customer service team available seven days a week</a> to provide you with the best online shopping experience possible. If you have further questions, our customer service agents can be contacted by chat, phone or email.</p>
+					<p><strong>Email:</strong> info@altitude-sports.com<br/>
+					<strong>Phone: Montreal region:</strong> 514-495-1111<br/>
+					<strong>Phone: North America:</strong> 1-800-729-0322<br/>
+					<strong>Phone: Outside of North America:</strong> 1-514-495-1111</p>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header">
+					<h2>Boxing Day Customer Service Hours</h2>
+				</div>
+				<div class="card-body" id="boxing-day-customer-service-hours">
+					<p>During Boxing Day, our staff will be available:</p>
+					<p style="line-height: 1.75em;padding-left: 1em;">Monday <span class="text-nowrap">December 24:</span> <span class="text-nowrap">9am - 3pm EST</span><br/>
+					Tuesday <span class="text-nowrap">December 25:</span> <span class="text-nowrap">12pm - 5pm EST</span><br/>
+					From <span class="text-nowrap">December 26</span> to <span class="text-nowrap">December 30:</span> <span class="text-nowrap">8:30am -12:30am EST</span><br/>
+					Monday <span class="text-nowrap">December 31:</span> <span class="text-nowrap">9am - 3pm EST</span><br/>
+					Tuesday <span class="text-nowrap">January 1:</span> <span class="text-nowrap">12pm - 5pm EST</span><br/>
+					From <span class="text-nowrap">January 2</span> to <span class="text-nowrap">January 4:</span> <span class="text-nowrap">9am - 12:30am EST</span></p>
+					<p>Normal hours will be back in effect <span class="text-nowrap">January 5.</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END Boxing Day -->
 </div>
 |-|
